@@ -1,0 +1,175 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+  -webkit-box-shadow: 0 3px 10px 0 #EEEEEE!important;
+  box-shadow: 0 3px 10px 0 #EEEEEE!important;
+}
+.header a {
+  background-color: #fff;
+}
+.header i {
+  font-size: 20px;
+  color: #444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0 #dfdfdf;
+  box-shadow: 0 -1px 70px 0 #dfdfdf;
+}
+/*
+ 代理人个人中心
+ * 
+ * */
+.agentCenter {
+  width: 100%;
+  margin-top: 0.56rem;
+  margin-bottom: 0.8rem;
+}
+.agentC-banner {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.1rem;
+}
+.agentC-banner img {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.agentC-banner .agentC-touxiang {
+  position: absolute;
+  top: 0.3rem;
+  width: 100%;
+  height: 1.1rem;
+}
+.agentC-touxiang {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.agentC-touxiang div {
+  float: left;
+}
+.agentC-touxiang div.touxiang {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.15rem;
+}
+.agentC-touxiang div.touxiang img {
+  display: block;
+  float: left;
+  width: 1.1rem;
+  height: 1.1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: 0.55rem;
+  background-color: #fff;
+}
+.agentC-touxiang div.agent-person {
+  margin-top: 0.3rem;
+}
+.agentC-touxiang div.agent-person span {
+  display: block;
+  color: #666;
+}
+.agentC-touxiang div.agent-person span.first {
+  font-size: 0.18rem;
+  margin-bottom: 0.05rem;
+}
+.agentC-touxiang div.agent-person span.last {
+  font-size: 12px;
+}
+/*成就累计*/
+.agentC-result {
+  width: 100%;
+  height: 1.2rem;
+  clear: both;
+  padding-top: 0.2rem;
+  margin-bottom: 0.1rem;
+  background-color: #fff;
+}
+.agentC-resultList {
+  width: 100%;
+  height: 0.8rem;
+  display: -webkit-flex;
+  display: flex;
+}
+.agentC-resultList div {
+  flex: 1;
+  text-align: center;
+  height: 0.8rem;
+}
+.agentC-resultList div.center {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.agentC-resultList div span {
+  display: block;
+}
+.agentC-resultList div span.first {
+  font-size: 0.26rem;
+  color: #ff6600;
+  margin-top: 0.1rem;
+  margin-bottom: 0.15rem;
+}
+.agentC-resultList div span.last {
+  font-size: 14px;
+  color: #aaa;
+}
+/*代理人个人中心选项卡*/
+.agentC-list {
+  width: 100%;
+}
+.agentC-list .mui-row {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  background-color: #fff;
+  height: 0.46rem;
+  line-height: 0.46rem;
+  color: #444;
+  clear: both;
+  margin-bottom: 0.1rem;
+}
+.agentC-list .mui-row i {
+  font-size: 16px;
+}
+.agentC-list .mui-row span {
+  font-size: 14px;
+}
+.agentC-list .mui-row span.last {
+  float: right;
+}
+.agentC-list .mui-row span.first i {
+  margin-right: 0.1rem;
+}
+/*退出登录*/
+.agentC-return {
+  width: 100%;
+  height: 0.4rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0.1rem;
+}
+.agentC-return button {
+  width: 100%;
+  height: 0.4rem;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+}

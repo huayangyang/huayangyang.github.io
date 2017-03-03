@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>个人设置</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/set.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack()"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">个人设置</h1>
+		</header>
+		<div id="navWrap">
+
+		</div>
+		<div id="set" class="set">
+			<div class="mui-row set-touxiang">
+				<div class="touxiang-left">
+					<a href="#"><img id="imgHeader" src="../../img/touxiang/portrait-70x70px.png" /></a>
+				</div>
+				<div class="touxiang-right">
+					<a id="fixImageHeader" href="#">
+						修改头像<i class="iconfont">&#xe60c;</i>
+					</a>
+				</div>
+			</div>
+			<div id="duserName-wrap" class="mui-row setlist setlist-first">
+				<span id="duserName" class="first">CCTV_LG</span> <span class="last">用户名</span>
+			</div>
+			<div class="mui-row setlist">
+				<span id="dname" class="first">章子怡</span><span class="last">真实姓名<i class="iconfont">&#xe60c;</i></span>
+			</div>
+			<div class="mui-row setlist">
+				<span id="dsex" class="first">男</span><span class="last">性别<i class="iconfont">&#xe60c;</i></span>
+			</div>
+			<div class="mui-row setlist" data-options='{"type":"date","beginYear":1980,"endYear":2020}'>
+				<span id="dbirthday" class="first">1989年10月5日</span><span class="last">出生日期<i class="iconfont">&#xe60c;</i></span>
+			</div>
+			<div class="mui-row setlist">
+				<span id="dqq" class="first">55565656565</span><span class="last">QQ<i class="iconfont">&#xe60c;</i></span>
+			</div>
+			<div class="mui-row setlist">
+				<span id="demail" class="first">54456456456</span><span class="last">邮箱<i class="iconfont">&#xe60c;</i></span>
+			</div>
+			<div class="mui-row setlist">
+				<span id="dmobile" class="first">15645621564</span><span class="last">手机号管理<i class="iconfont">&#xe60c;</i></span>
+			</div>
+			<div id="zhifubao" class="mui-row setlist">
+				<span class="first">15632146647</span><span class="last">支付宝<i class="iconfont">&#xe60c;</i></span>
+			</div>
+			<div id="bank" class="mui-row setlist">
+				<span class="first">华夏银行 465456455445646544</span><span class="last">银行卡<i class="iconfont">&#xe60c;</i></span>
+			</div>
+			<div class="mui-row setlist">
+				<button id="setSave">保存</button>
+			</div>
+		</div>
+		<div id="fixImg" class="fixHeader zc-hidden">
+			<form id="form1" name="form1">
+				<div class="mui-row fixHeader-top">修改头像</div>
+				<div class="mui-row fixHeader-b">
+					<div class="fixImg">
+						<i class="iconfont">&#xe617;</i> 上传头像
+						<img id="preview" src=""/>
+						<input type="file" id="upfile" name="upfile" accept="image/x-png, image/jpeg, image/x-ms-bmp" />
+					</div>
+					<p id="fix-result" class=""></p>
+				</div>
+				<div class="mui-row fixHeader-btm">
+					<button id="fixImg-off" class="first" type="button">取消</button>
+					<button id="fixImg-sure" type="button">确定</button>
+				</div>
+			</form>
+
+		</div>
+		<div class="bank zc-hidden">
+			<div class="mui-row bankList">
+				<select name="">
+					<option value="">请选择银行</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<i class="iconfont">&#xe60d;</i>
+			</div>
+			<div class="mui-row">
+				<input type="text" name="" id="" placeholder="请输入您的银行卡号" />
+			</div>
+			<div class="mui-row">
+				<button type="button">确定</button>
+			</div>
+		</div>
+		<div id="telePhone" class="phone zc-hidden">
+			<div class="phone-check">
+				<div class="mui-row phone-input">
+					<input id="pnoneNum" type="text" placeholder="请输入当前手机号" />
+					<button id="setPhoneCheck" type="button">发送验证码</button>
+				</div>
+				<div id="phone_result" class="mui-row phone-result">
+					<input id="checkNum" type="text" placeholder="请输入您收到的验证码" />
+				</div>
+				<div class="mui-row phone-next">
+					<button id="phoneNext" type="button">下一步</button>
+				</div>
+			</div>
+		</div>
+		<div id="newPhone" class="phone zc-hidden">
+			<div class="phone-check">
+				<div class="mui-row phone-input">
+					<input id="newPhoneNum" class="" type="text" placeholder="请输入新手机号" />
+					<button id="newPhoneCheck" type="button">发送验证码</button>
+				</div>
+				<div class="mui-row phone-result">
+					<input id="newCheckNum" type="text" placeholder="请输入您收到的验证码" />
+				</div>
+				<div class="mui-row phone-next">
+					<button id="subNewPhone" type="button">提交</button>
+				</div>
+			</div>
+		</div>
+		<div id="sex-fix" class="sex zc-hidden">
+			<div class="mui-row sex-tishi">
+				提示
+			</div>
+			<div class="mui-row sex-nan">
+				<button class="sexperson" type="button">男</button>
+			</div>
+			<div class="mui-row sex-nv">
+				<button class="sexperson" type="button">女</button>
+			</div>
+		</div>
+		<div id="sexMask" class="zc-hidden"></div>
+	</body>
+	<script src="../../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/set.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

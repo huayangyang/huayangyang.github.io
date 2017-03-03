@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>搜索</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/search.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<div class="search-wrap mui-row">
+				<div class="mui-col-sm-1 mui-col-xs-1">
+					<a href="javascript:goBack()" class="left"><i class="iconfont">&#xe60b;</i></a>
+				</div>
+				<div class="mui-col-sm-10 mui-col-xs-10 mui-row search-select">
+					<div class="mui-col-sm-2 mui-col-xs-2">
+						<select name="">
+							<option value="">商品</option>
+							<option value="">店铺</option>
+						</select>
+					</div>
+					<div class="mui-col-sm-1 mui-col-xs-1">
+						<i class="iconfont">&#xe60d;</i>
+					</div>
+					<div class="mui-col-sm-9 mui-col-xs-9">
+						<input type="text" name="" id="" placeholder="请输入产品/店铺名称" />
+					</div>
+				</div>
+				<div class="mui-col-sm-1 mui-col-xs-1">
+					<a href="#" class="right"> <i class="iconfont">&#xe600;</i></a>
+				</div>
+			</div>
+		</header>
+		
+		<div id="navWrap">
+			
+		</div>
+		<section class="search-tab">
+			<a href="#" class="mui-col-sm-3 mui-col-xs-3">
+				三星 note7
+			</a>
+			<a href="#" class="mui-col-sm-3 mui-col-xs-3">
+				华为
+			</a>
+			<a href="#" class="mui-col-sm-3 mui-col-xs-3">
+				华为
+			</a>
+			<a href="#" class="mui-col-sm-3 mui-col-xs-3">
+				OPPo R9
+			</a>
+			<a href="#" class="mui-col-sm-3 mui-col-xs-3">
+				华为
+			</a>
+			<a href="#" class="mui-col-sm-3 mui-col-xs-3">
+				华为
+			</a>
+		</section>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#navWrap').load('../module/nav.html#nav')
+		});
+	</script>
+
+</html>

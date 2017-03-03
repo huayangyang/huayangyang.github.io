@@ -1,0 +1,121 @@
+@charset "utf-8";
+.color(@color:#666666;) {
+    color: @color;
+}
+.bgcolor(@bgcolor:#ff6600;) {
+    background-color: @bgcolor;
+}
+html,
+body {
+    .bgcolor(#f9f9f9);
+    overflow-x: hidden;
+}
+.mui-content {
+    padding-top: 0 !important;
+}
+.header {
+    padding-top: 0;
+    line-height: 0.46rem;
+    -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    a {
+        .bgcolor(#fff);
+    }
+    i {
+        font-size: 20px;
+        .color(#444);
+    }
+    h1 {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 18px;
+        .color(#444);
+    }
+}
+.footer{
+     -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+     box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+/*产品评价展示*/
+.assess{
+    width: 100%;
+    margin-top: 0.56rem;
+    margin-bottom: 0.8rem;
+}
+.assessList{
+    width: 100%;
+    padding: 0.1rem;
+    padding-right: 0;
+    .bgcolor(#fff);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 0.1rem;
+    
+}
+.assessLeft{
+    width: 0.8rem;
+    float: left;
+    .bgcolor(#fff);
+    img{
+        display: block;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius:0.4rem;
+        padding: 0.04rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #EEEEEE;
+    }
+    p{
+        width: 100%;
+        font-size: 14px;
+        .color(#666);
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 3px;
+    }
+}
+.assessRight{
+    float: left;
+    padding-top: 0.16rem;
+    .bgcolor(#fff);
+    padding-left: 0.1rem;
+    .mui-inline{
+        font-size: 12px;
+        .color(#aaa);
+        line-height: 30px;
+        padding-left: 0.05rem;
+    }
+    .mui-content-padded{
+        padding: 0;
+        margin: 0;
+    }
+    p{
+        font-size: 14px;
+        .color(#aaa);
+        padding-left: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>评价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/assesslist.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack()"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">产品评价展示</h1>
+		</header>
+		<div id="navWrap">
+
+		</div>
+		<div class="assess">
+			<div class="assessList mui-row">
+				<div class="assessLeft mui-col-sm-3 mui-col-xs-3">
+					<img src="../../img/touxiang/portrait-70x70px.png" />
+					<p>章子怡</p>
+				</div>
+				<div class="assessRight mui-col-sm-9 mui-col-xs-9">
+					<div class="mui-content-padded">
+						<div class="icons mui-inline">
+							<i data-index="1" class="mui-icon mui-icon-star"></i>
+							<i data-index="2" class="mui-icon mui-icon-star"></i>
+							<i data-index="3" class="mui-icon mui-icon-star"></i>
+							<i data-index="4" class="mui-icon mui-icon-star"></i>
+							<i data-index="5" class="mui-icon mui-icon-star"></i>
+						</div>
+						<div class="mui-inline">2016/06/23</div>
+						<p>手机不错，官网也认证！手机不也认证了，正品发货，送的小配件也不错！32个赞！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init();
+		//应用评分
+		mui('.icons').on('tap', 'i', function() {
+			var index = parseInt(this.getAttribute("data-index"));
+			var parent = this.parentNode;
+			var children = parent.children;
+			if(this.classList.contains("mui-icon-star")) {
+				for(var i = 0; i < index; i++) {
+					children[i].classList.remove('mui-icon-star');
+					children[i].classList.add('mui-icon-star-filled');
+				}
+			} else {
+				for(var i = index; i < 5; i++) {
+					children[i].classList.add('mui-icon-star')
+					children[i].classList.remove('mui-icon-star-filled')
+				}
+			}
+			starIndex = index;
+		});
+		$(function() {
+			$('#navWrap').load('../module/nav.html#nav');
+		});
+	</script>
+
+</html>

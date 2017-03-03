@@ -1,0 +1,245 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+  -webkit-box-shadow: 0 3px 10px 0 #EEEEEE!important;
+  box-shadow: 0 3px 10px 0 #EEEEEE!important;
+}
+.header a {
+  background-color: #fff;
+}
+.header i {
+  font-size: 20px;
+  color: #444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0 #dfdfdf;
+  box-shadow: 0 -1px 70px 0 #dfdfdf;
+}
+.footer a {
+  font-size: 14px;
+  color: #444;
+}
+.footer a.last {
+  background-color: #FF6600;
+  font-size: 14px;
+  color: #fff;
+}
+.footer a.center span {
+  font-size: 14px;
+  color: #ff6600;
+}
+/*地址*/
+.balance {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+.adress {
+  width: 100%;
+  height: 120px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  margin-bottom: 0.1rem;
+  position: relative;
+}
+.adress .border-btn,
+.adress .border-top {
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  background: url("../img/border/site_bg.png");
+}
+.adress .border-top {
+  top: 0;
+  left: 0;
+}
+.adress .border-btn {
+  left: 0;
+  bottom: 0;
+}
+.adress a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.adress p {
+  width: 3.6rem;
+}
+.adress i {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0.1rem;
+}
+.adress p.adress-p1 {
+  font-size: 16px;
+  color: #444444;
+  margin-top: 0.26rem;
+}
+.adress p.adress-p1 span.last {
+  float: right;
+}
+.adress p.adress-p2 {
+  font-size: 14px;
+  color: #aaa;
+}
+.balance-shop {
+  width: 100%;
+  height: 0.46rem;
+  line-height: 0.46rem;
+}
+.balance-shop h3 {
+  width: 100%;
+  background-color: #fff;
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 14px;
+  color: #666666;
+  text-indent: 0.1rem;
+}
+.balance-shop h3 i {
+  font-size: 16px;
+  margin-right: 0.12rem;
+}
+.balanceList {
+  width: 100%;
+}
+.balance-buy {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding-left: 0.1rem;
+  padding-top: 0.1rem;
+  border-bottom: 4px solid #fff;
+  background-color: #f9f9f9;
+}
+.balance-buy img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  float: left;
+  margin-right: 0.1remk;
+}
+.balance-buy div {
+  float: left;
+  width: 2.76rem;
+}
+.balance-buy p {
+  padding-left: 0.1rem;
+}
+.balance-p1 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+.balance-p2 span.first {
+  font-size: 16px;
+  color: #ff6600;
+}
+.balance-p2 span.last {
+  font-size: 12px;
+  color: #aaa;
+  float: right;
+}
+/*配送方式*/
+.balance-peisong {
+  width: 100%;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-bottom: 0.15px;
+  background-color: #fff;
+}
+.peisong-1 {
+  width: 100%;
+  height: 46px;
+}
+.peisong-1 p {
+  height: 46px;
+  line-height: 46px;
+  font-size: 14px;
+  color: #444;
+}
+.peisong-2 {
+  width: 100%;
+  position: relative;
+  border: 1px solid #EEEEEE;
+  height: 43px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0.1rem;
+}
+.peisong-2 i {
+  position: absolute;
+  display: inline-block;
+  right: 0.1rem;
+  top: 12px;
+  font-size: 12px;
+  z-index: 0;
+}
+.peisong-2 select {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0);
+  font-size: 14px;
+  color: #666;
+  height: 43px;
+  margin-left: 0;
+}
+.peisong-3 {
+  width: 100%;
+}
+.peisong-3 p {
+  height: 43px;
+  line-height: 43px;
+  font-size: 14px;
+  color: #ff6600;
+  border: 1px dashed #FF6600;
+  margin-left: 0;
+  padding-left: 10px;
+}
+/*买家留言*/
+.balance-liuyan {
+  width: 100%;
+  margin-top: 0.1rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  background-color: #fff;
+}
+.liuyan-1 {
+  width: 100%;
+  height: 44px;
+}
+.liuyan-1 p {
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  color: #444444;
+}
+.liuyan-2 textarea {
+  font-size: 14px;
+  color: #666666;
+  border: 1px solid #EEEEEE;
+}
+.cheap {
+  margin-top: 0.1rem;
+}

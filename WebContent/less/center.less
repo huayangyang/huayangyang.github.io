@@ -1,0 +1,124 @@
+@charset "utf-8";
+.color(@color:#666666;) {
+    color: @color;
+}
+.bgcolor(@bgcolor:#ff6600;) {
+    background-color: @bgcolor;
+}
+html,
+body {
+    .bgcolor(#f9f9f9);
+    overflow-x: hidden;
+}
+.mui-content {
+    padding-top: 0 !important;
+}
+.header {
+    padding-top: 0;
+    line-height: 0.46rem;
+    -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    a {
+        .bgcolor(#fff);
+    }
+    i {
+        font-size: 20px;
+        .color(#444);
+    }
+    h1 {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 18px;
+        .color(#444);
+    }
+}
+.footer{
+     -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+     box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+/*个人中心*/
+.center{
+    width: 100%;
+    margin-top: 0.51rem;
+    margin-bottom: 0.8rem;
+}
+.center-header{
+    width: 100%;
+    clear: both;
+    margin-bottom: 0.1rem;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .center-touxiang{
+        position: absolute;
+        width: 1.1rem;
+        text-align: center;
+        top: 0.2rem;
+        left: 50%;
+        -webkit-transform: translateX(-0.55rem);
+        transform: translateX(-0.55rem);
+    }
+}
+.center-touxiang{
+    img{
+        display: block;
+        clear: both;
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 0.55rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 2px;
+        .bgcolor(#fff);
+    }
+    p{
+        font-size:0.18rem;
+        .color(#444);
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+.center-list{
+    width: 100%;
+    .mui-row{
+        width: 100%;
+        height: 46px;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        .bgcolor(#fff);
+        font-size: 14px;
+        .color(#444);
+        clear: both;
+        margin-bottom: 0.1rem;
+        line-height: 46px;
+        &.last{
+            height: 40px;
+            line-height: 40px;
+            .bgcolor(#f9f9f9);
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            .bgcolor(#ff6600);
+            .color(#fff);
+            border-radius: 3px;
+            border: none;
+        }
+        span{
+            &.first{
+                float: left;
+                i{
+                    margin-right: 0.05rem;
+                    font-size: 20px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            &.last{
+                float: right;
+            }
+        }
+    }
+}

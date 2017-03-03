@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>订单中心</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/orderCenter.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack()"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">订单中心</h1>
+			<a id="chartCenter-search" class="last" href="#"><i class="iconfont">&#xe600;</i></a>
+		</header>
+		<div id="navWrap">
+			
+		</div>
+		<div class="orderCenter">
+			<div class="orderCenter-style">
+				<div class="first">全部</div>
+				<div class="zc-active">待审核 <span class="mui-badge">2</span></div>
+			</div>
+			<div class="orderCenter-list">
+				<div class="mui-row list-top">
+					<span><i class="iconfont first">&#xe609;</i>啊小朵</span><span class="last wait">待审核</span>
+				</div>
+				<div class="mui-row list-body">
+					<ul class="proList-ul-1">
+						<li>
+							<a href="">
+								<img src="../../img/activity/product-img-192x192px.jpg" />
+								<div>
+									<p class="proList-p1">华为 荣耀 畅玩 4 金色荣耀 畅玩 4 金色荣耀 畅玩 4金色</p>
+									<p class="proList-p2"><span>进价 : ￥700.00</span><span class="last">售价 ：<i>￥750.00</i></span></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-row list-btm"><span>共2件商品</span><span class="last">佣金 : ￥50.00</span></div>
+			</div>
+			<div class="orderCenter-list">
+				<div class="mui-row list-top">
+					<span><i class="iconfont first">&#xe609;</i>啊小朵</span><span class="last success"><i class="iconfont">&#xe62a;</i>完成</span>
+				</div>
+				<div class="mui-row list-body">
+					<ul class="proList-ul-1">
+						<li>
+							<a href="">
+								<img src="../../img/activity/product-img-192x192px.jpg" />
+								<div>
+									<p class="proList-p1">华为 荣耀 畅玩 4 金色荣耀 畅玩 4 金色荣耀 畅玩 4金色</p>
+									<p class="proList-p2"><span>进价 : ￥700.00</span><span class="last">售价 ：<i>￥750.00</i></span></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-row list-btm"><span>共2件商品</span><span class="last">佣金 : ￥50.00</span></div>
+			</div>
+			<div class="orderCenter-list">
+				<div class="mui-row list-top">
+					<span><i class="iconfont first">&#xe609;</i>啊小朵</span><span class="last pingjia">待评价</span>
+				</div>
+				<div class="mui-row list-body">
+					<ul class="proList-ul-1">
+						<li>
+							<a href="">
+								<img src="../../img/activity/product-img-192x192px.jpg" />
+								<div>
+									<p class="proList-p1">华为 荣耀 畅玩 4 金色荣耀 畅玩 4 金色荣耀 畅玩 4金色</p>
+									<p class="proList-p2"><span>进价 : ￥700.00</span><span class="last">售价 ：<i>￥750.00</i></span></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-row list-btm"><span>共2件商品</span><span class="last">佣金 : ￥50.00</span></div>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#navWrap').load('../module/nav.html#nav')
+		});
+	</script>
+</html>

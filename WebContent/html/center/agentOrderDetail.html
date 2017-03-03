@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>订单详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/agentOrderDetail.css">
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack();"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">订单详情</h1>
+		</header>
+		<div id="navWrap">
+			
+		</div>
+		<div class="orderDetail">
+			<div class="current-order">
+				<div class="current-top">当前订单状态指示</div>
+				<div class="current-b">
+					<p><span>订单编号 : </span><span>4654564654654654646545464</span></p>
+					<p><span>下单时间 : </span><span>546545454654654546</span></p>
+					<p><span>支付方式 : </span><span>货到付款/在线支付</span></p>
+					<p><span>订单总额 : </span><span>￥2250</span></p>
+					<p><span>优惠金额 : </span><span>￥0</span></p>
+					<p><span>收货地址 : </span><span>河南省金水区郑州大学某小区某楼某号等详细地址</span></p>
+					<p><span>买家留言 : </span><span>是的发射管昆仑山地方记录卡撒旦解放</span></p>
+				</div>
+			</div>
+			<div class="buy-detail">
+				<div class="orderCenter-list">
+					<div class="mui-row list-top">
+						<span><i class="iconfont first">&#xe609;</i>啊小朵</span>
+					</div>
+					<div class="mui-row list-body">
+						<ul class="proList-ul-1">
+							<li>
+								<a href="">
+									<img src="../../img/activity/product-img-192x192px.jpg" />
+									<div>
+										<p class="proList-p1">华为 荣耀 畅玩 4 金色荣耀 畅玩 4 金色荣耀 畅玩 4金色</p>
+										<p class="proList-p2"><span>进价 : ￥700.00</span><span class="last">售价 ：<i>￥750.00</i></span></p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-row list-btm"><span>共2件商品</span><span class="last">佣金 : ￥50.00</span></div>
+				</div>
+			</div>
+			<div class="list-detail">
+				<div class="mui-row"><span class="first">数量 :</span><span class="last">1</span></div>
+				<div class="mui-row"><span class="first">优惠 :</span><span class="last">￥20.00</span></div>
+				<div class="mui-row"><span class="first">应付 :</span><span class="last">￥750.00</span></div>
+				<div class="mui-row last-prepre"><span class="first">实付 :</span><span class="last">￥730.00</span></div>
+				<div class="mui-row last-pre"><span class="first">佣金 :</span><span class="last">￥30.00</span></div>
+				<div class="mui-row last"><span><i class="iconfont">&#xe627;</i>佣金=订单总额-（单品进价*数量）</span></div>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#navWrap').load('../module/nav.html#nav')
+		});
+	</script>
+
+</html>

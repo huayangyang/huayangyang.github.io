@@ -1,0 +1,232 @@
+@charset "utf-8";
+.color(@color:#666666;) {
+    color: @color;
+}
+.bgcolor(@bgcolor:#ff6600;) {
+    background-color: @bgcolor;
+}
+html,
+body {
+    .bgcolor(#f9f9f9);
+    overflow-x: hidden;
+}
+.mui-content {
+    padding-top: 0 !important;
+}
+.header {
+    padding-top: 0;
+    line-height: 0.46rem;
+    -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    a {
+        .bgcolor(#fff);
+    }
+    i {
+        font-size: 20px;
+        .color(#444);
+    }
+    h1 {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 18px;
+        .color(#444);
+    }
+}
+.addChart{
+    .bgcolor(#ff6600)!important;
+    .color(#fff)!important;
+}
+.footer{
+     -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+     box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+.mui-slider{
+    margin-top: 0.46rem;
+    a{
+        .bgcolor(#fff);
+    }
+}
+.buy{
+    width: 100%;
+}
+.buy-xiangqing,.buy-lingjuan,.buy-peizhi,.buy-pingjia{
+    .bgcolor(#fff);
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+/*详情价格销量*/
+.xiangqing{
+    font-size: 14px;
+    .color(#666);
+    a{
+        float: right;
+        font-size: 12px;
+        .color(#aaa);
+        .bgcolor(#fff);
+        i{
+            margin-left: 0.1rem;
+            font-size: 12px;
+        }
+    }
+}   
+.jiage{
+    font-size: 12px;
+    .color(#aaa);
+    span{
+        font-size: 18px;
+        .color(#ff6600);
+        margin-right: 0.1rem;
+    }
+}
+/*领卷*/
+.lingjuan-title{
+    font-size: 14px;
+    .color(#666);
+    line-height: 0.5rem;
+}
+.buy-lingjuan{
+    padding-bottom: 0.1rem;
+}
+.lingjuan-card{
+    position: relative;
+    a{
+        display: block;
+        width: 122px;
+        height: 66px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+         background: #e45050 url(../img/buy/coupon-bom-17x4PX.png) repeat-x bottom left;
+        span{
+            display: block;
+            width: 100%;
+            text-align: center;
+            &.first{
+                height: 37px;
+                line-height: 37px;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+                font-size: 20px;
+                .color(#fff);
+                b{
+                    font-size: 14px;
+                    font-weight: 100;
+                    .color(#fff);
+                }
+            }
+            &.last{
+                font-size: 11px;
+                .color(#fff);
+            }
+        }
+        &.isActive{
+            background: #fa9899 url(../img/buy/coupon-bom-17x4PX.png) repeat-x bottom left;
+        }
+        &.disUser{
+            background: #EEEEEE url(../img/buy/coupon-bom-17x4PX.png) repeat-x bottom left;
+        }
+    }
+    .buy-shdow{
+        &.zc-hidden{
+            display: none;
+        }
+        position: absolute;
+        background: rgba(68,24,24,.7) url(../img/buy/coupon-bom-17x4PX.png) repeat-x bottom left;
+        width: 122px;
+        height: 66px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        color: rgb(125,199,39);
+        text-align: center;
+        span{
+            display: block;
+            color: rgb(125,199,39);
+            font-size: 14px;
+            margin-bottom: 4px;
+            &.first{
+                font-size: 16px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+.buy-peizhi{
+    padding-top: 15px;
+    padding-bottom: 0.1rem;
+}
+/*购买配置*/
+.peizhi-list{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    a{
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+        padding-left: 14px;
+        padding-right: 14px;
+        border: 1px solid #eee;
+        .bgcolor(#fff);
+        font-size: 14px;
+        color: #666;
+        margin-left: 14px;
+        &.buy-checked{
+            border: 1px solid #FF6600;
+            color: #FF6600;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+}
+.mui-numbox{
+    border-radius: 15px;
+    .bgcolor(#fff)!important;
+    border: 1px solid #eee;
+    margin-left: 14px;
+    button{
+        height: 30px!important;
+        .bgcolor(#fff)!important;
+    }
+}
+/*评价*/
+.buy-pingjia{
+    margin-bottom: 0.8rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    a{
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        .color(#666);
+        .bgcolor(#fff);
+        span{
+            float: right;
+        }
+    }
+}
+/*微信客服*/
+.weixinkefu{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    width: 258px;
+    height: 258px;
+    -webkit-transform: translate(-129px,-129px);
+    transform: translate(-129px,-129px);
+    img{
+        display: block;
+        width: 258px;
+        height: 258px;
+        float: left;
+    }
+    &.zc-hidden{
+        display: none;
+    }
+}

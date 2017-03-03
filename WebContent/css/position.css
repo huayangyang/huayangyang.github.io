@@ -1,0 +1,36 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+  -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+  box-shadow: 0 3px 10px 0px #EEEEEE!important;
+}
+.header a {
+  background-color: #fff;
+}
+.header i {
+  font-size: 20px;
+  color: #444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+  box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+.position-wrap {
+  width: 100%;
+  margin-top: 0.46rem;
+}

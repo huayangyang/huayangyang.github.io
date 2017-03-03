@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/order.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack();"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">购物车</h1>
+			<a id="order-edit" class="right" href="#">编辑</a>
+		</header>
+		<nav class="mui-bar mui-bar-tab footer">
+			<div class="mui-tab-item mui-input-row mui-checkbox mui-left footer-checkbox">
+				<input name="checkbox" value="Item 1" type="checkbox">
+				<span>全选 ( <b>1</b> ) </span>
+			</div>
+			<a class="mui-tab-item order-center" href="#tabbar-with-chat">
+				总计 : <span>￥725</span>
+			</a>
+			<a id="order-buy" class="mui-tab-item order-right" href="#tabbar-with-contact">
+				去结算
+			</a>
+			<a id="confirmBtn" class="mui-tab-item order-last" href="#tabbar-with-contact" style="display: none;">
+				移除
+			</a>
+		</nav>
+		<div class="order">
+			<div class="mui-checkbox mui-input-row mui-left order-shop">
+				<input name="checkbox1" value="" type="checkbox" checked="">
+				<a href="#"><i class="iconfont">&#xe610;</i>芷云店铺</a>
+			</div>
+			<div class="mui-checkbox mui-input-row mui-left order-pro">
+				<input name="checkbox1" value="" type="checkbox" checked="">
+				<a href="#">
+					<img src="../../img/order/order1.png" />
+					<div>
+						<div class="order-p1">华为 荣耀畅玩 4C 金色 16G 电信 增强版</div>
+						<div class="order-p2">
+							<span>￥725</span>
+							<div class="mui-numbox">
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input class="mui-input-numbox" type="number" value = "1"/>
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="mui-checkbox mui-input-row mui-left order-pro">
+				<input name="checkbox1" value="" type="checkbox" checked="">
+				<a href="#">
+					<img src="../../img/order/order1.png" />
+					<div>
+						<div class="order-p1">华为 荣耀畅玩 4C 金色 16G 电信 增强版</div>
+						<div class="order-p2">
+							<span>￥725</span>
+							<div class="mui-numbox">
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input class="mui-input-numbox" type="number" value = "1"/>
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/l-order.js" type="text/javascript" charset="utf-8"></script>
+</html>

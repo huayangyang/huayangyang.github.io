@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>收货地址</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/adress.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack();"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">收货地址</h1>
+		</header>
+		<div class="adress-fix">
+			<div class="adsfix-person mui-row">
+				<div class="mui-col-sm-2 mui-col-xs-2 first">收货人: </div>
+				<div class="mui-col-sm-9 mui-col-xs-9"><input type="text" placeholder="请输入收货人"  /></div>
+			</div>
+			<div class="adsfix-phone mui-row">
+				<div class="mui-col-sm-2 mui-col-xs-2 first">手机号:</div>
+				<div class="mui-col-sm-9 mui-col-xs-9"><input type="text" placeholder="请输入手机号"  /></div>
+			</div>
+			<div class="adsfix-adress mui-row">
+				<div class="mui-col-sm-2 mui-col-xs-2 first" style="line-height: 122px;">所在地区:</div>
+				<div class="mui-col-sm-9 mui-col-xs-9" style="color: #999;">
+					<select id = "select0">
+						<option>--选择省--</option>
+					</select>
+					<select id = "select1">
+						<option>--选择城市--</option>
+					</select>
+					<select id = "select2">
+						<option>--选择区/县--</option>
+					</select>
+					<select id = "select3">
+						<option>--选择乡镇--</option>
+					</select>
+				</div>
+			</div>
+			<div class="adsfix-adress1 mui-row">
+				<div class="mui-col-sm-2 mui-col-xs-2 first">详细地址:</div>
+				<div class="mui-col-sm-9 mui-col-xs-9"><textarea name="" rows="" cols="" placeholder="请输入详细地址，具体到教师门牌号或寝室门牌号"></textarea></div>
+			
+			</div>
+			<div class="mui-row adsfix-switch">
+				<div class="mui-col-sm-10 mui-col-xs-10">
+					<p class="switch-p1">设置默认地址</p>
+					<p class="switch-p2">注 : 每次下单时会使用该地址</p>
+				</div>
+				<div class="mui-col-sm-2 mui-col-xs-2">
+					<div class="mui-switch mui-switch-mini">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-row adsfix-tijiao">
+				<button>提交</button>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/l-addadress.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

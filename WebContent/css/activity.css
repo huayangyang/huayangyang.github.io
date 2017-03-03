@@ -1,0 +1,128 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #6c50c1;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+}
+.header a {
+  background-color: #ffffff;
+}
+.header i {
+  font-size: 20px;
+  color: #444444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444444;
+}
+/*活动专题*/
+.actBanner {
+  width: 100%;
+  margin-top: 0.46rem;
+}
+.actBanner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 0.1rem;
+}
+/*专题列表*/
+.actPro-list {
+  width: 100%;
+  min-height: 0.4rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.avtPro-top {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.1rem;
+}
+.avtPro-top a {
+  display: block;
+  background-color: #ffffff;
+  height: 0.4rem;
+  color: #666666;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 14px;
+  flex: 1;
+  position: relative;
+}
+.avtPro-top a.center {
+  margin-left: 0.02rem;
+  margin-right: 0.02rem;
+}
+.avtPro-top a span {
+  top: 50%;
+  line-height: 0.1rem;
+  -webkit-transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
+  position: absolute;
+  margin-left: 0.07rem;
+  text-align: center;
+}
+.avtPro-top a span i {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: #aaaaaa;
+}
+.avtPro-top a span i.first {
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.avtPro-top a span i.last {
+  color: #ff6600;
+}
+.actPro-body {
+  width: 100%;
+  padding-bottom: 0.8rem;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0.08rem;
+  -moz-column-gap: 0.08rem;
+  column-gap: 0.08rem;
+}
+.actPro-body a {
+  background-color: #ffffff;
+}
+.actPro-body li {
+  width: 100%;
+  margin-bottom: 0.08rem;
+  background-color: #ffffff;
+}
+.actPro-body img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.06rem;
+}
+.actPro-body p.actPro-p1 {
+  font-size: 14px;
+  color: #666666;
+  line-height: 0.2rem;
+  margin-bottom: 0.06rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.actPro-body p.actPro-p2 {
+  font-size: 12px;
+  color: #aaaaaa;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}

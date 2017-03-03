@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <display-name>PSS</display-name>
+    <description>PSS</description>
+
+    <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>/WEB-INF/log4j.properties</param-value>
+    </context-param>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            <!-- spring配置文件 -->
+            classpath*:conf/dataSource.xml,
+            classpath*:conf/base-applicationContext.xml,
+            classpath*:conf/**/action-servlet.xml,
+            classpath*:conf/**/applicationContext.xml
+        </param-value>
+    </context-param>
+    <context-param>
+        <param-name>webAppRootKey</param-name>
+        <param-value>pss.root</param-value>
+    </context-param>
+
+    <filter>
+        <description>字符集过滤器，把所有字符强制转换成UTF-8编码</description>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <filter>
+        <description>防Ddos攻击过滤器</description>
+        <filter-name>ddosOffFilter</filter-name>
+        <filter-class>com.ah.framework.filter.DdosOffFilter</filter-class>
+        <init-param>
+            <param-name>pattern</param-name>
+            <param-value>reg:.*\.(jsp|action:?)</param-value>
+        </init-param>
+        <init-param>
+            <param-name>uriWhiteList</param-name>
+            <param-value>此处写入不需过滤的URI，直接以/sys/...开关即可，多个URL用,或空白字符分隔</param-value>
+        </init-param>
+        <init-param>
+            <param-name>mode</param-name>
+            <param-value>MOD_IP</param-value>
+        </init-param>
+        <init-param>
+            <param-name>pageInterval</param-name>
+            <param-value>5</param-value>
+        </init-param>
+        <init-param>
+            <param-name>pageCount</param-name>
+            <param-value>14</param-value>
+        </init-param>
+        <init-param>
+            <param-name>blockingPeriod</param-name>
+            <param-value>10</param-value>
+        </init-param>
+        <init-param>
+            <param-name>errorMsg</param-name>
+            <param-value>您访问的速度太快，休息一下吧!</param-value>
+        </init-param>
+    </filter>
+
+    <filter>
+        <description>Struts2预备拦截器</description>
+        <filter-name>Struts2-prepare</filter-name>
+        <filter-class>
+            org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter
+        </filter-class>
+        <init-param>
+            <description>struts框架基础配置</description>
+            <param-name>config</param-name>
+            <param-value>
+                struts-default.xml,struts-plugin.xml,struts.xml
+            </param-value>
+        </init-param>
+    </filter>
+    <filter>
+        <description>Struts2执行拦截器</description>
+        <filter-name>Struts2-execute</filter-name>
+        <filter-class>
+            org.apache.struts2.dispatcher.ng.filter.StrutsExecuteFilter
+        </filter-class>
+    </filter>
+
+    <filter>
+        <description>登录验证拦截</description>
+        <filter-name>loginCheckFilter</filter-name>
+        <filter-class>com.ah.framework.auth.CheckLoginFilter</filter-class>
+        <init-param>
+            <description>哪些URL被排除在外,url可以使用REG:xxx来使用正则表达式，多个URL用英文逗号(,)分隔，URL中的英文逗号可以用&#44;代替</description>
+            <param-name>exclude</param-name>
+            <param-value>
+                /pss/pub/upload/.*,
+                REG:/pss/wx2/main/.*,
+                REG:/pss/pub/util/.*,
+                REG:/pss/wx2/login/.*,
+                REG:/pss/wx2/shop/.*,
+                REG:/pss/wx2/product/WX2Product.+,
+                /pss/wx2/product/ProductReview.action,
+                /pss/wx2/product/ProductReview_toReview.action
+            </param-value>
+        </init-param>
+    </filter>
+
+    <filter>
+        <description>权限验证拦截</description>
+        <filter-name>authenticationFilter</filter-name>
+        <filter-class>com.ah.framework.auth.AuthenticationFilter</filter-class>
+        <init-param>
+            <param-name>pattern</param-name>
+            <param-value>/*/**</param-value>
+        </init-param>
+        <init-param>
+            <param-name>noAuthUri</param-name>
+            <param-value>/login/login.jsp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>target</param-name>
+            <param-value>com.ah.sys.auth.SysAuthentication</param-value>
+        </init-param>
+        <!--微信2.0登录页面-->
+        <init-param>
+            <param-name>buy</param-name>
+            <param-value>/html/user/commonLogin.html</param-value>
+        </init-param>
+        <init-param>
+            <param-name>proxy</param-name>
+            <param-value>/html/user/agentLogin.html</param-value>
+        </init-param>
+    </filter>
+
+    <filter>
+        <description>javamelody服务器监视器</description>
+        <filter-name>monitoring</filter-name>
+        <filter-class>
+            net.bull.javamelody.MonitoringFilter
+        </filter-class>
+    </filter>
+
+    <filter>
+        <description>用户操作访问记录</description>
+        <filter-name>LogUserOpratorFilter</filter-name>
+        <filter-class>com.ah.framework.auth.LogUserOpratorFilter</filter-class>
+        <init-param>
+            <description>访问注册表的间隔，每隔一段时间查询注册表SYSTEM_LOG_OP是否允许记录日志，单位为毫秒</description>
+            <param-name>interval</param-name>
+            <param-value>60000</param-value>
+        </init-param>
+    </filter>
+
+    <!-- 
+    <filter-mapping>
+    	<filter-name>ddosOffFilter</filter-name>
+    	<url-pattern>/*</url-pattern>
+    </filter-mapping>
+     -->
+    <filter-mapping>
+        <filter-name>monitoring</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>LogUserOpratorFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>loginCheckFilter</filter-name>
+        <url-pattern>/sys/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>loginCheckFilter</filter-name>
+        <url-pattern>/pub/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>loginCheckFilter</filter-name>
+        <url-pattern>/merchant/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>loginCheckFilter</filter-name>
+        <url-pattern>/operate/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>loginCheckFilter</filter-name>
+        <url-pattern>/order/*</url-pattern>
+    </filter-mapping>
+
+    <!--<filter-mapping>-->
+    <!--<filter-name>loginCheckFilter</filter-name>-->
+    <!--<url-pattern>/product/*</url-pattern>-->
+    <!--</filter-mapping>-->
+
+    <filter-mapping>
+        <filter-name>loginCheckFilter</filter-name>
+        <url-pattern>/pss/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>loginCheckFilter</filter-name>
+        <url-pattern>/purchase/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>loginCheckFilter</filter-name>
+        <url-pattern>/util/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>authenticationFilter</filter-name>
+        <url-pattern>*.action</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>Struts2-prepare</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>Struts2-execute</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <listener>
+        <description>被包装的Spring监听器</description>
+        <listener-class>com.ah.framework.context.StartUpListener</listener-class>
+    </listener>
+
+    <listener>
+        <description>监听session中的登陆用户信息，当有用户登录或注销时清除相应数据</description>
+        <listener-class>com.ah.sys.login.listener.LoginUserListener</listener-class>
+    </listener>
+    <listener>
+        <description>监听服务器运行信息</description>
+        <listener-class>
+            net.bull.javamelody.SessionListener
+        </listener-class>
+    </listener>
+
+    <servlet>
+        <description>Proxool连接池状态监控Servlet</description>
+        <servlet-name>proxoolAdmin</servlet-name>
+        <servlet-class>org.logicalcobwebs.proxool.admin.servlet.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>proxoolAdmin</servlet-name>
+        <url-pattern>/proxool</url-pattern>
+    </servlet-mapping>
+
+    <!--<servlet>-->
+    <!--<description>读取编译的jsp文件</description>-->
+    <!--<servlet-name>jspServlet</servlet-name>-->
+    <!--<servlet-class>com.ah.framework.servlet.JspClassServlet</servlet-class>-->
+    <!--<init-param><param-name>useJspFirst</param-name><param-value>true</param-value></init-param>-->
+    <!--<load-on-startup>2</load-on-startup>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>jspServlet</servlet-name>-->
+    <!--<url-pattern>*.jsp</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!-- 微信验证的Servlet -->
+    <servlet>
+        <servlet-name>shakeHands</servlet-name>
+        <servlet-class>com.ah.wx2.servlet.ShakeHandsServlet</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shakeHands</servlet-name>
+        <url-pattern>/shakeHands</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/errorpage/404.html</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/errorpage/500.html</location>
+    </error-page>
+
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
+</web-app>

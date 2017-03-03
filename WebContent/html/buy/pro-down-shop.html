@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>商品列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/pro-down-shop.css" />
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack();"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">华为 荣耀 V8 博广金 32G 全网通</h1>
+		</header>
+		<div id="navWrap"></div>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop lunbo">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img class="img-lb" src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<div class="proList-wrap">
+			<div class="proList-top">
+				<a href="#">
+					<span class="">默认</span>
+				</a>
+				<a href="#">
+					<span class="">同校</span>
+				</a>
+				<a href="#">
+					<div>
+						<span class="first">销量</span><span class="last"><i class="iconfont">&#xe620;</i><i class="iconfont last">&#xe60d;</i></span>
+					</div>
+				</a>
+				<a class="" href="#">
+					<div>
+						<span class="first">价格</span><span class="last"><i class="iconfont">&#xe620;</i><i class="iconfont last">&#xe60d;</i></span>
+					</div>
+				</a>
+			</div>
+			<div class="proList-b">
+				<div class="chabo">
+					<a href="#"><img src="../../img/ads/ad1-394x80px.jpg" /></a>
+				</div>
+				<ul class="proList-ul-2">
+					<li class="add">
+						<a href="">
+							<img src="../../img/index/shop-title-192x80px-1.jpg" />
+							<div>
+								<p class="proList-p1">朵朵云</p>
+								<p class="proList-p2">河南省郑州市金水区轻工业学院</p>
+								<p class="proList-p3">
+									<span class="first price">￥725</span>
+									<span class="last">销量:163</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="../../img/index/shop-title-192x80px-1.jpg" />
+							<div>
+								<p class="proList-p1">朵朵云</p>
+								<p class="proList-p2">河南省郑州市金水区轻工业学院</p>
+								<p class="proList-p3">
+									<span class="first">￥725</span>
+									<span class="last">销量:163</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="../../img/index/shop-title-192x80px-1.jpg" />
+							<div>
+								<p class="proList-p1">朵朵云</p>
+								<p class="proList-p2">河南省郑州市金水区轻工业学院</p>
+								<p class="proList-p3">
+									<span class="first">￥725</span>
+									<span class="last">销量:163</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../../img/index/shop-title-192x80px-1.jpg" />
+							<div>
+								<p class="proList-p1">朵朵云</p>
+								<p class="proList-p2">河南省郑州市金水区轻工业学院</p>
+								<p class="proList-p3">
+									<span class="first">￥725</span>
+									<span class="last">销量:163</span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#navWrap').load('../module/nav.html#nav')
+		});
+	</script>
+
+</html>

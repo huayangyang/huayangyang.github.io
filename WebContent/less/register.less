@@ -1,0 +1,168 @@
+@charset "utf-8";
+.color(@color:#666666;) {
+    color: @color;
+}
+.bgcolor(@bgcolor:#ff6600;) {
+    background-color: @bgcolor;
+}
+html,
+body {
+    .bgcolor(#f9f9f9);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.mui-content {
+    padding-top: 0 !important;
+}
+.header {
+    padding-top: 0;
+    line-height: 0.46rem;
+    -webkit-box-shadow: 0 3px 10px 0px #EEEEEE;
+    box-shadow: 0 3px 10px 0px #EEEEEE;
+    a {
+        .bgcolor(#fff);
+    }
+    i {
+        font-size: 20px;
+        .color(#444);
+    }
+    h1 {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 18px;
+        .color(#444);
+    }
+}
+.register{
+    position: absolute;
+    width: 100%;
+    top: 0.46rem;
+    left: 0;
+    &.display{
+        display: none;
+    }
+}
+.reg-phone,.reg-check{
+    padding-top: 0.24rem;
+}
+/*输入手机号*/
+.reg-phone-form{
+    width: 3.5rem;
+    margin: 0 auto;
+    input{
+        border-color: #EEEEEE;
+        height: 0.36rem;
+        font-size: 14px;
+        .color(#aaa);
+    }
+    button{
+        width: 100%;
+        height: 0.36rem;
+        border: none;
+        .bgcolor(#ff6600);
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-top: 5px;
+    }
+}
+/*输入验证码*/
+.reg-check-form{
+    width: 3.5rem;
+    margin: 0 auto;
+    input{
+        border-color: #EEEEEE;
+        height: 0.4rem;
+        font-size: 14px;
+        .color(#aaa);
+    }
+    button{
+        font-size: 14px;
+        .color(#FFFFFF);
+    }
+    
+}
+.reg-check1,.reg-check2,.reg-check3,.reg-check4,.reg-check5{
+    width: 100%;
+}
+.reg-check1{
+   input{
+       width: 2.34rem;
+       margin-right: 0.1rem;
+       float: left;
+   }
+   button{
+       width: 1.06rem;
+       height: 0.4rem;
+       border: none;
+       .bgcolor;
+   }
+}
+.reg-check4{
+    padding-left: 0;
+    input{
+        width: 0.16rem;
+        height: 0.16rem;
+        float: left;
+        margin-right: 0.07rem;
+        .bgcolor(#fff);
+        border: 1px solid #EEEEEE;
+        .color(#FFFFFF);
+    }
+    p{
+        height: 0.16rem;
+        line-height: 0.16rem;
+        font-size: 12px;
+        .color(#aaa);
+    }
+    
+}
+.reg-check5{
+    button{
+        width: 100%;
+        height: 0.4rem;
+        .bgcolor;
+        border: 0;
+    }
+}
+/*用户协议*/
+.reg-deal{
+    width: 100%;
+    height: 100%;
+    .bgcolor(#646464);
+    padding: 0.2rem 0.1rem;
+    box-sizing: border-box;
+}
+.reg-deal-wrap{
+    width: 100%;
+    height: 5.40rem;
+    .bgcolor(#fff);
+    padding: 0.1rem;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.reg-deal-btn-wrap{
+    .bgcolor(#646464);
+    width: 100%;
+}
+.reg-deal-btn{
+    width: 100%;
+    margin: 0 auto;
+    .bgcolor(#FFFFFF);
+    text-align: center;
+    button{
+        width: 1.6rem;
+        font-size: 14px;
+        height: 0.4rem;
+        .bgcolor;
+        border: none;
+        color: #FFFFFF;
+        margin-bottom: 0.08rem;
+        margin-top: 0.08rem;
+    }
+    button.left{
+        .bgcolor(#fff);
+        color: #AAAAAA;
+        border: 0.01rem solid #EEEEEE;
+        box-sizing: border-box;
+    }
+}

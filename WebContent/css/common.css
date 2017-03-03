@@ -1,0 +1,145 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'pingHei', "lucida grande", "lucida sans unicode", "STHeiti", "helvetica", "microsoft yahei", arial, sans-serif;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+li {
+	float: left;
+}
+
+h3 {
+	font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #ff6600;
+}
+
+
+/*a:link{background-color: #ff7f00;color: #FFFFFF;}*/
+
+
+/*a:active,a:link{background-color: ff7f00;color: #FFFFFF;}*/
+
+
+/*a:hover{background-color: ff7f00;color: #FFFFFF;}
+a.disabled{background: #EEEEEE;color:#AAAAAA}*/
+
+input,
+button {
+	outline: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+input{
+	border-color: #EEEEEE;
+	font-size: 14px;
+	color: #AAAAAA;
+	border: none;
+}
+input[type=checkbox]:checked:before,.mui-radio,.input[type=radio]:checked:before{
+	color: #FF6600!important;
+}
+button{
+	text-align: center;
+	padding: 0;
+}
+@font-face {
+	font-family: 'iconfont';
+	src: url('../iconfont/iconfont.eot');
+	/* IE9*/
+	src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+	url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('../iconfont/iconfont.svg#iconfont') format('svg');
+	/* iOS 4.1- */
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	margin-bottom: 0.05rem;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.border-1px {
+	position: relative;
+	border: 0 !important;
+}
+.border-1px::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: (1 - 2) * 100%;
+	bottom: (1 - 2) * 100%;
+	border: 1px solid #eee;
+	transform: scale(1 / 2, 1 / 2);
+	transform-origin: 0 0;
+	color: #eee;
+}
+.header {
+    box-shadow: none!important;
+    background-color: #FFFFFF;
+    padding: 0.05rem 0.1rem;
+    height: 0.46rem;
+}
+.footer {
+  box-shadow: none;
+  border-top: 0.01rem solid #f9f9f9;
+}
+.footer a {
+  background-color: #fff;
+}
+.zc-hidden{
+	display: none;
+}
+/*插播*/
+.chabo {
+  width: 3.94rem;
+  margin: 0 auto;
+}
+.chabo img {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 0.1rem;
+}
+.mui-active{
+	color: #FF6600!important;
+}
+.mui-popup-button{
+	background: #FFFFFF;
+	color: #FF6600;
+	font-size: 14px;
+}
+.mui-icon-star-filled{
+	color: #FF9900!important;
+}
+.mui-active{
+	border-color: #FF6600!;
+}
+.mui-switch{
+	border: 1px solid #EEEEEE;
+	height: 24px;
+}
+.mui-switch-handle{
+	width: 20px!important;
+	height: 20px!important;
+	border-radius: 11px!important;
+	top: 1px!important;
+	left: 1px!important;
+}	

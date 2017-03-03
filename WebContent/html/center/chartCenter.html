@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>我的订单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/swiper-3.4.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/charCenter.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack()"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">我的订单</h1>
+			<a id="chartCenter-search" class="last" href="#"><i class="iconfont">&#xe600;</i></a>
+		</header>
+		<div id="navWrap">
+			
+		</div>
+		<div id="chartCenter-input" class="chartCenter-search zc-hidden">
+			<div class="chartCenter-input">
+				<div class="mui-col-sm-2 mui-col-xs-2 mui-row first">
+					<select name="">
+						<option value="">名称</option>
+						<option value="">单号</option>
+					</select>
+				</div>
+				<div class="mui-col-sm-1 mui-col-xs-1  mui-row center">
+					<i class="iconfont">&#xe60d;</i>
+				</div>
+				<div class="mui-col-sm-8 mui-col-xs-8  mui-row">
+					<input type="text" placeholder="请输入订单名称或者订单号" />
+				</div>
+				
+			</div>
+			<div class="chartCenter-data">
+				<a data-options='{"type":"date"}' id="pickDateBtn1" class="data-select btn first" href="#"><i class="iconfont">&#xe622;</i><b>2016-01-01</b></a>
+				<span>至</span>
+				<a data-options='{"type":"date"}' id="data2" class="data-select btn last" href="#"><i class="iconfont">&#xe622;</i><b>2016-01-01</b></a>
+			</div>
+			<div class="chartCenter-btn">
+				<button type="button">确定</button>
+			</div>
+		</div>
+		<div class="chartCenter">
+			<div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide zc-active">全部</div>
+					<div class="swiper-slide">待支付<span class="mui-badge">1</span></div>
+					<div class="swiper-slide">待审核</div>
+					<div class="swiper-slide">待发货<span class="mui-badge">11</span></div>
+					<div class="swiper-slide">待收货<span class="mui-badge">11</span></div>
+					<div class="swiper-slide">待评价</div>
+				</div>
+			</div>
+			<!--<div class="chartCenter-shop">
+				<p>
+					<a href="javascript:void(0);"><i class="iconfont">&#xe610;</i>芷云店铺 <i class="iconfont">&#xe60c;</i></a>
+					<a class="last" href="javascript:void(0);">待评价</a>
+				</p>
+			</div>
+			<div class="chartCenter-proList">
+				<ul class="proList-ul-1">
+					<li>
+						<a href="">
+							<img src="../../img/activity/product-img-192x192px.jpg" />
+							<div>
+								<p class="proList-p1">华为 荣耀 畅玩 4 金色荣耀 畅玩 4 金色荣耀 畅玩 4金色</p>
+								<p class="proList-p2">￥725<span>1</span></p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="chartCenter-result">
+				<p class="result-p1">共<span class = "l-totalNum">2</span>件商品&nbsp;&nbsp; 合计 : ￥<span class = "l-totalPrice">1450</span> &nbsp;&nbsp;支付方式 : <span class = "l-totalPay">支付宝</span></p>
+				<p class="result-p2">
+					<a class="l-server" href="##">售后服务</a>
+					<a class="zc-active l-pingjia" href="#">立即评价</a>
+				</p>
+			</div>-->
+		</div>
+		<div id="masklayer" class="zc-hidden"></div>
+	</body>
+	<script src="../../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/swiper-3.4.0.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/l-chartCenter.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

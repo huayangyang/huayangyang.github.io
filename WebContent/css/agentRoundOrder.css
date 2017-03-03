@@ -1,0 +1,194 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+  -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+  box-shadow: 0 3px 10px 0px #EEEEEE!important;
+}
+.header a {
+  background-color: #fff;
+}
+.header i {
+  font-size: 20px;
+  color: #444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+  box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+.refoundOrder {
+  width: 100%;
+  margin-top: 0.56rem;
+}
+.refoundOrder-status {
+  width: 100%;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  text-align: center;
+  font-size: 0.18rem;
+  background-color: #fff;
+  color: #7dc727;
+  margin-bottom: 0.1rem;
+}
+.refoundOrder-status i {
+  font-size: 30px;
+  margin-right: 0.06rem;
+  position: relative;
+  top: 0.02rem;
+}
+.refoundOrder-status i.success {
+  font-size: 25px;
+}
+.refoundOrder-pro {
+  width: 100%;
+  background-color: #fff;
+}
+.refoundOrder-b {
+  background-color: #fff;
+}
+/*订单列表*/
+.orderCenter-list {
+  width: 100%;
+}
+.orderCenter-list .mui-row {
+  clear: both;
+  background-color: #fff;
+}
+.list-top {
+  height: 46px;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border-bottom: 1px solid #F9F9F9;
+  padding-top: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.list-top span {
+  font-size: 14px;
+  color: #666;
+}
+.list-top span i.first {
+  margin-right: 0.05rem;
+}
+.list-body {
+  width: 100%;
+}
+.proList-ul-1 {
+  width: 100%;
+  margin: 0 auto;
+}
+.proList-ul-1 li {
+  width: 100%;
+  height: 1.2rem;
+}
+.proList-ul-1 li a {
+  display: block;
+  width: 100%;
+  height: 1.2rem;
+  padding-top: 0.07rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-bottom: 0.1rem;
+}
+.proList-ul-1 img {
+  display: block;
+  float: left;
+  width: 1.06rem;
+  height: 1.06rem;
+  margin-right: 0.1rem;
+}
+.proList-ul-1 div {
+  width: 2.9rem;
+  height: 1.06rem;
+  float: left;
+  padding-right: 0.25rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.proList-ul-1 .proList-p1 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.proList-ul-1 .proList-p2 {
+  font-size: 12px;
+  color: #aaa;
+  height: 12px;
+  margin-top: 0.25rem;
+}
+.proList-ul-1 .proList-p2 span.last {
+  margin-left: 0.15rem;
+}
+.proList-ul-1 .proList-p2 i {
+  font-size: 14px;
+  color: #FF6600;
+  font-style: normal;
+}
+.list-btm {
+  border-top: 1px solid #F9F9F9;
+  border-bottom: 1px solid #F9F9F9;
+  text-align: right;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #666;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.list-btm span.last {
+  margin-left: 0.1rem;
+}
+.refoundOrder-detail {
+  padding-top: 0.2rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  clear: both;
+  padding-bottom: 0.2rem;
+}
+.refoundOrder-detail .first {
+  font-size: 14px;
+  color: #aaa;
+  width: 70px;
+}
+.refoundOrder-detail .last {
+  font-size: 14px;
+  color: #666;
+}
+.refoundOrder-detail .last img {
+  display: block;
+  float: left;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.1rem;
+}
+.refoundOrder-detail .mui-row {
+  width: 100%;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.refoundOrder-detail button {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #ff6600;
+  border: none;
+  margin-top: 0.2rem;
+}

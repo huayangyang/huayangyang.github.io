@@ -1,0 +1,197 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+  -webkit-box-shadow: 0 3px 10px 0 #EEEEEE!important;
+  box-shadow: 0 3px 10px 0 #EEEEEE!important;
+}
+.header a {
+  background-color: #fff;
+}
+.header a.last {
+  float: right;
+  height: 0.46rem;
+}
+.header i {
+  font-size: 20px;
+  color: #444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+  box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+/*订单中心*/
+.orderCenter {
+  width: 100%;
+  margin-top: 0.54rem;
+  margin-bottom: 0.8rem;
+}
+.orderCenter-style {
+  width: 100%;
+  height: 0.46rem;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding-top: 0.13rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0.1rem;
+}
+.orderCenter-style div {
+  height: 0.2rem;
+  line-height: 0.2rem;
+  font-size: 14px;
+  color: #666;
+  flex: 1;
+  text-align: center;
+}
+.orderCenter-style div .mui-badge {
+  background-color: #ff6600;
+  color: #fff;
+  position: relative;
+  top: -5px;
+}
+.orderCenter-style div.first {
+  border-right: 1px solid #eee;
+}
+.orderCenter-style div.zc-active {
+  color: #ff6600;
+}
+/*订单列表*/
+.orderCenter-list {
+  width: 100%;
+  margin-bottom: 0.1rem;
+}
+.orderCenter-list .mui-row {
+  clear: both;
+  background-color: #fff;
+}
+.list-top {
+  height: 46px;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border-bottom: 1px solid #F9F9F9;
+  padding-top: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.list-top span {
+  font-size: 14px;
+  color: #666;
+}
+.list-top span i.first {
+  margin-right: 0.05rem;
+}
+.list-top span i.last {
+  margin-left: 0.05rem;
+}
+.list-top span.last {
+  float: right;
+}
+.list-top span.wait {
+  border: 1px solid #FF6600;
+  color: #ff6600;
+  display: inline-block;
+  height: 22px;
+  border-radius: 11px;
+  line-height: 22px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.list-top span.success {
+  color: #6fbb21;
+}
+.list-top span.success i {
+  position: relative;
+  top: 1px;
+  font-size: 14px;
+  color: #6fbb21;
+  margin-right: 0.05rem;
+}
+.list-top span.pingjia {
+  color: #ff6600;
+}
+.list-body {
+  width: 100%;
+}
+.proList-ul-1 {
+  width: 100%;
+  margin: 0 auto;
+}
+.proList-ul-1 li {
+  width: 100%;
+  height: 1.2rem;
+  margin-bottom: 0.1rem;
+}
+.proList-ul-1 li a {
+  display: block;
+  width: 100%;
+  height: 1.2rem;
+  padding-top: 0.07rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-bottom: 0.1rem;
+}
+.proList-ul-1 img {
+  display: block;
+  float: left;
+  width: 1.06rem;
+  height: 1.06rem;
+  margin-right: 0.1rem;
+}
+.proList-ul-1 div {
+  width: 2.9rem;
+  height: 1.06rem;
+  float: left;
+  padding-right: 0.25rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.proList-ul-1 .proList-p1 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.proList-ul-1 .proList-p2 {
+  font-size: 12px;
+  color: #aaa;
+  height: 12px;
+  margin-top: 0.25rem;
+}
+.proList-ul-1 .proList-p2 span.last {
+  margin-left: 0.15rem;
+}
+.proList-ul-1 .proList-p2 i {
+  font-size: 14px;
+  color: #FF6600;
+  font-style: normal;
+}
+.list-btm {
+  border-top: 1px solid #F9F9F9;
+  text-align: right;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #666;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.list-btm span.last {
+  margin-left: 0.1rem;
+}

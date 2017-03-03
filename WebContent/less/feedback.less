@@ -1,0 +1,160 @@
+@charset "utf-8";
+.color(@color:#666666;) {
+    color: @color;
+}
+.bgcolor(@bgcolor:#ff6600;) {
+    background-color: @bgcolor;
+}
+html,
+body {
+    .bgcolor(#f9f9f9);
+    overflow-x: hidden;
+}
+.mui-content {
+    padding-top: 0 !important;
+}
+.header {
+    padding-top: 0;
+    line-height: 0.46rem;
+    -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    a {
+        .bgcolor(#fff);
+    }
+    i {
+        font-size: 20px;
+        .color(#444);
+    }
+    h1 {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 18px;
+        .color(#444);
+    }
+}
+.footer{
+     -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+     box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+/*使用反馈*/
+.feedback{
+    width: 100%;
+    height: 0.46rem;
+    margin-top: 0.46rem;
+    padding-top: 0.1rem;
+}
+.feedback-call{
+    width: 100%;
+    a{
+       display: block;
+       float: left;
+       width: 100%;
+       height:1.2rem;
+       .bgcolor(#fff);
+       padding-top: 30px;
+       -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+       margin-bottom: 0.1rem;
+    }
+    p{
+        text-align: center;
+        .color(#ff6600);
+        &.first{
+            font-size: 0.25rem;
+        }
+        &.two{
+            font-size: 14px;
+        }
+    }
+}
+.feedback-wrap{
+    width: 100%;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    margin-bottom: 0.8rem;
+    .bgcolor(#fff);
+    input{
+        border: 1px solid #eee;
+        height: 40px;
+        font-size: 14px;
+        .color(#aaa);
+    }
+    textarea{
+       border: 1px solid #eee; 
+       font-size: 14px;
+       .color(#aaa);
+    }
+    select{
+        font-size: 14px;
+        .color(#aaa);
+    }
+    button{
+        width: 100%;
+        .bgcolor(#ff6600);
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        .color(#fff);
+    }
+    p{
+        font-size: 14px;
+        .color(#666);
+    }
+}
+.feedback-select{
+    position: relative;
+    z-index: 10;
+    border: 1px solid #eee;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 0.1rem;
+    overflow: hidden;
+    i{
+        display: block;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        .color(#aaa);
+        font-size: 14px;
+        right: 10px;
+        top: 50%;
+        -webkit-transform: translateY(-7px);
+        transform: translateY(-7px);
+        z-index: 0;
+    }
+    select{
+        position: relative;
+        z-index: 5;
+       background: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

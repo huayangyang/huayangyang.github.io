@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>忘记密码</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/forgetPwd.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack()"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">智虫网</h1>
+		</header>
+		<div id="reg_phone" class="reg-phone register zc-hidden">
+			<form class="reg-phone-form">
+				<div class="">
+					<input id="newPwd1" type="password" class="dataId" placeholder="请输入新的密码" />
+				</div>
+				<div class="">
+					<input id="newPwd2" type="password" class="password" placeholder="请再次输入新的密码" />
+				</div>
+				<div>
+					<button id="fixPwd" type="button">确定</button>
+				</div>
+			</form>
+		</div>
+		<div id="reg_check" class="reg-check register">
+			<form class="reg-check-form">
+				<div class="reg-check1">
+					<input id="forgetMobile" type="text" placeholder="请输入您的手机号" />
+					<button id="sendCheck" type="button">发送验证码</button>
+				</div>
+				<div class="reg-check2">
+					<input id="forgetCheckNum" type="text" class="yzm" placeholder="请输入您收到的验证码">
+				</div>
+				<div class="reg-check5">
+					<button id="forgetNext" type="button" class="next">下一步</button>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script src="../../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/forgetPwd.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>抱歉您访问的页面找不到了</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        body{
+            font-family: "Microsoft YaHei", "微软雅黑", Simsun;
+        }
+        .content{
+            position: relative;
+            width: 900px;
+            margin: 200px auto 0 auto;
+            overflow: hidden;
+        }
+        .contentL,.contentR{
+            float: left;
+            height: 223px;
+        }
+        .contentL{
+            width: 35%;
+        }
+        .contentR{
+            width: 65%;
+        }
+        .contentR img{
+            margin: 40px 0;
+        }
+
+        a{
+            display: inline-block;
+            height: 40px;
+            width: 140px;
+            margin: 10px 20px;
+            border: 2px #ff6600 solid;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            color: #ff6600;
+            text-decoration: none;
+        }
+        a:hover{
+            background: #ff6600;
+            color: #fff;
+        }
+        @media all and (max-width: 414px) {
+            .content{
+                position: relative;
+                width: 100%;
+                margin: 50px auto;
+                overflow: hidden;
+            }
+            .contentL,.contentR{
+                width: 100%;
+                text-align: center;
+                height: 223px;
+            }
+            .contentR img{
+                width: 85%;
+                margin: 30px 0;
+            }
+        }
+    </style>
+</head>
+<script type="text/javascript">
+    function goBack() {
+        window.history.back();
+        window.location.reload();
+    }
+</script>
+<body>
+<div class="content">
+    <div class="contentL">
+        <img src="/wxomi2/img/error/404.png" alt="">
+    </div>
+    <div class="contentR">
+        <img src="/wxomi2/img/error/404text.png" alt="">
+        <a class="goback" href="javascript:goBack();">返回上一页</a>
+        <a class="gohome" href="">返回首页</a>
+    </div>
+</div>
+</body>
+</html>

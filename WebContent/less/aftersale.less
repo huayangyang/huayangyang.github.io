@@ -1,0 +1,240 @@
+@charset "utf-8";
+.color(@color:#666666;) {
+    color: @color;
+}
+.bgcolor(@bgcolor:#ff6600;) {
+    background-color: @bgcolor;
+}
+html,
+body {
+    .bgcolor(#f9f9f9);
+    overflow-x: hidden;
+}
+.mui-content {
+    padding-top: 0 !important;
+}
+.header {
+    padding-top: 0;
+    line-height: 0.46rem;
+    -webkit-box-shadow: 0 3px 10px 0 #EEEEEE!important;
+    box-shadow: 0 3px 10px 0 #EEEEEE!important;
+    a {
+        .bgcolor(#fff);
+    }
+    i {
+        font-size: 20px;
+        .color(#444);
+    }
+    h1 {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 18px;
+        .color(#666);
+    }
+}
+.footer {
+    -webkit-box-shadow: 0 -1px 70px 0 #dfdfdf;
+    box-shadow: 0 -1px 70px 0 #dfdfdf;
+}
+/*售后单*/
+.aftersale {
+    width: 100%;
+    margin-top: 0.56rem;
+    margin-bottom: 0.8rem;
+}
+.aftersale-style {
+    clear: both;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    .bgcolor(#fff);
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
+    .style-top {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 14px;
+        .color(#666);
+    }
+    .style-b {
+        height: 40px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 14px;
+        .color(#aaa);
+        select {
+            border: 1px solid #EEEEEE!important;
+            border-radius: 0;
+        }
+    }
+}
+.order {
+    width: 100%;
+    margin-bottom: 0.1rem;
+    clear: both;
+}
+.order-shop {
+    width: 100%;
+    height: 46px;
+    .bgcolor(#fff)!important;
+    line-height: 46px;
+    input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+    }
+    input[type=checkbox]:before {
+        display: block;
+        border-radius: 10px;
+        margin-left: 0;
+        font-size: 20px;
+        line-height: 36px;
+        margin-top: 0;
+        font-weight: 100;
+    }
+    a {
+        display: block;
+        .bgcolor(#fff)!important;
+        font-size: 14px;
+        .color(#666);
+        margin-left: 50px;
+        i {
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    }
+}
+.order-pro {
+    width: 100%;
+    height: 120px;
+    line-height: 46px;
+    .bgcolor(#fff)!important;
+    border-bottom: 1px solid #F9F9F9;
+    input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+    }
+    input[type=checkbox]:before {
+        display: block;
+        border-radius: 10px;
+        margin-left: 0;
+        font-size: 20px;
+        line-height: 120px;
+        margin-top: 0;
+        font-weight: 100;
+    }
+    a {
+        display: block;
+        .bgcolor(#fff);
+        height: 120px;
+        margin-left: 50px;
+        padding-top: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    img {
+        display: block;
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-right: 0.1rem;
+        margin-left: 0.1rem;
+    }
+    div.order-p1 {
+        height: 60px;
+        margin: 0;
+        padding: 0 0.1rem 0 0;
+        line-height: 22px;
+        font-size: 14px;
+        .color(#666);
+    }
+    div.order-p2 {
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        line-height: 40px;
+        span {
+            display: inline-block;
+            line-height: 40px;
+            font-size: 14px;
+            .color(#ff6600);
+        }
+    }
+}
+/*
+ * 问题描述
+ * 
+ * */
+.aftersale-miaoshu {
+    clear: both;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    .bgcolor(#fff);
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
+    .style-top {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 14px;
+        .color(#666);
+    }
+    input {
+        height: 40px;
+    }
+    input,
+    textarea {
+        border: 1px solid #EEEEEE;
+        border-radius: 0;
+        font-size: 14px;
+        .color(#aaa);
+    }
+}
+/*上传评价*/
+.aftersale-pingzheng {
+    clear: both;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    .bgcolor(#fff);
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
+    .style-top {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 14px;
+        .color(#666);
+    }
+    .pingzheng-img{
+        div{
+            display: block;
+            float: left;
+            width: 0.8rem;
+            height: 0.8rem;
+            margin-right: 0.1rem;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #EEEEEE;
+            position: relative;
+            text-align: center;
+            i,span{
+                display: block;
+                .color(#aaa);
+            }
+            i{
+                font-size: 0.38rem;
+                margin-top: 0.2rem;
+            }
+            span{
+                font-size: 12px;
+            }
+            input{
+                position: absolute;
+                width: 0.8rem;
+                height: 0.8rem;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                opacity: 0;
+            }
+        }
+    }
+}

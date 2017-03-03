@@ -1,0 +1,202 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+}
+.header a {
+  background-color: #fff;
+}
+.header i {
+  font-size: 20px;
+  color: #444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0 #dfdfdf;
+  box-shadow: 0 -1px 70px 0 #dfdfdf;
+}
+/*
+ 代理人个人中心
+ * 
+ * */
+.agentCenter {
+  width: 100%;
+  margin-top: 0.46rem;
+  margin-bottom: 0.8rem;
+}
+.agentC-banner {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.1rem;
+}
+.agentC-banner img {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.agentC-banner .agentC-touxiang {
+  position: absolute;
+  top: 0.4rem;
+  width: 100%;
+  height: 1.1rem;
+}
+.agentC-touxiang {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.agentC-touxiang div {
+  float: left;
+}
+.agentC-touxiang div.agent-person {
+  width: 100%;
+  text-align: center;
+}
+.agentC-touxiang div.agent-person span {
+  display: block;
+  color: #666;
+}
+.agentC-touxiang div.agent-person span.first {
+  font-size: 0.36rem;
+  margin-bottom: 0.2rem;
+  color: #fff;
+}
+.agentC-touxiang div.agent-person span.last {
+  font-size: 14px;
+  color: #fff;
+}
+/*成就累计*/
+.agentC-result {
+  width: 100%;
+  height: 1.2rem;
+  clear: both;
+  padding-top: 0.2rem;
+  background-color: #fff;
+}
+.agentC-resultList {
+  width: 100%;
+  height: 0.8rem;
+  display: -webkit-flex;
+  display: flex;
+}
+.agentC-resultList div {
+  flex: 1;
+  text-align: center;
+  height: 0.8rem;
+}
+.agentC-resultList div.center {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.agentC-resultList div span {
+  display: block;
+}
+.agentC-resultList div span.first {
+  font-size: 0.26rem;
+  color: #ff6600;
+  margin-top: 0.1rem;
+  margin-bottom: 0.15rem;
+}
+.agentC-resultList div span.last {
+  font-size: 14px;
+  color: #aaa;
+}
+/*佣金时间筛选*/
+.broke-data {
+  width: 100%;
+  height: 56px;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  clear: both;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.broke-data button {
+  width: 1.8rem;
+  height: 36px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: left;
+  color: #666;
+}
+.broke-data button i {
+  margin-left: 0.1rem;
+  padding-right: 0.1rem;
+  font-size: 20px;
+  color: #aaa;
+  position: relative;
+  top: 2px;
+}
+.broke-data button.first {
+  float: left;
+}
+.broke-data button.last {
+  float: right;
+}
+.broke-data span {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #aaa;
+}
+/*佣金状态*/
+.agentC-status {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 10px;
+  margin-bottom: 0.1rem;
+}
+.agentC-status .agentC-c {
+  width: 100%;
+  border-top: 1px solid #eee;
+  padding-top: 0.1rem;
+}
+.agentC-status .mui-row {
+  height: 36px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+.agentC-status .mui-row span {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.status-wrap {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 0.1rem;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+.status-wrap div {
+  flex: 1;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.status-wrap div.center {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}

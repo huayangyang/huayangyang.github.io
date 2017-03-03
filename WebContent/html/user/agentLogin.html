@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>代理人登陆登陆</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/agentLogin.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack()"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">智虫网</h1>
+		</header>
+		<div id="navWrap">
+			
+		</div>
+		<div class="cL-logo">
+			<img src="../../img/login/LOGO-220x86.png" />
+		</div>
+		<form class="cL-form">
+			<div class="">
+			<input id="agentUserName" type="text" class="userName" placeholder="请输入用户名/手机号">
+			</div>
+			<div class="">
+				<input id="agentPwd" type="password" class="mui-input-password" placeholder="请输入密码">
+			</div>
+			<div class="cL-form-forget">
+				<a class="left" href="forgetPwd.html">忘记密码？</a>
+				<a class="right" href="agent.html">申请开店</a>
+			</div>
+			<div class="cL-login">
+				<button id="agentLogin" type="button" >代理人登陆</button>
+			</div>
+		</form>
+		<div class="cL-join">
+			<img src="../../img/login/agency-login-414x80px.png"/>
+		</div>
+		<div class="cL-otherLogin">
+			<div class="cL-otherLogin-top">
+				<span class="first"></span>
+				<span>其他登陆方式</span>
+				<span class="last"></span>
+			</div>
+			<div class="cL-otherLogin-b">
+				<a class="weixin" href="#">
+					<i class="iconfont">&#xe61e;</i>
+					<span class="">微信</span>
+				</a>
+			</span>
+		</div>
+
+	</body>
+	<script src="../../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/login.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#navWrap').load('../module/nav.html#nav')
+			//代理人登录
+			$('#agentLogin').get(0).addEventListener('tap',function(){
+				var agentUserName=$('#agentUserName').val();
+				var agentPwd=$('#agentPwd').val();
+				$.ajax({
+					type:"get",
+					data:{"loginType":2,},
+					beforeSend:function(){
+						$('#agentLogin').html('登录中...')
+					},
+					dataType:'json',
+					url:"/wxomi2/wx2/login/WX2Login_testLogin.action",
+					success:function(data){
+//						console.log(data)
+						if(data.item.logined) {
+							window.location.href = '../../index.html';
+							localStorage.userLogined=data.item.logined;
+							localStorage.userType=data.item.userType;
+						}
+					},
+					error:function () {
+						console.log('1');
+					}
+				});
+			},false);
+		});
+	</script>
+
+</html>

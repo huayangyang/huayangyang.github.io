@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>撰写评价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/appraise.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack()"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">撰写评价</h1>
+		</header>
+		<div id="navWrap">
+			
+		</div>
+		<div class="appraise">
+			<div class="mui-row appraise-order">
+				订单号 : 132121321231321321322
+			</div>
+			<div class="mui-row appraise-pro">
+				<ul class="proList-ul-1">
+					<li>
+						<a href="">
+							<img src="../../img/activity/product-img-192x192px.jpg" />
+							<div>
+								<p class="proList-p1">华为 荣耀 畅玩 4 金色荣耀 畅玩 4 金色荣耀 畅玩 4金色</p>
+								<p class="proList-p2">￥ 725</p>
+							</div>
+						</a>
+
+					</li>
+				</ul>
+			</div>
+			<div class="mui-row appraise-xingxing">
+				<div class="mui-content-padded">
+					<div class="mui-inline">星级 : </div>
+					<div class="icons mui-inline">
+						<i data-index="1" class="mui-icon mui-icon-star"></i>
+						<i data-index="2" class="mui-icon mui-icon-star"></i>
+						<i data-index="3" class="mui-icon mui-icon-star"></i>
+						<i data-index="4" class="mui-icon mui-icon-star"></i>
+						<i data-index="5" class="mui-icon mui-icon-star"></i>
+					</div>
+				</div>
+			</div>
+			<div class="mui-row appraise-text">
+				<div class="mui-inline">评价 : </div>
+				<textarea name="" rows="" cols="" placeholder="请输入评价"></textarea>
+			</div>
+			<div class="mui-row appraise-tijiao">
+				<button>提交</button>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	mui.init();
+	mui('.icons').on('tap', 'i', function() {
+		var index = parseInt(this.getAttribute("data-index"));
+		var parent = this.parentNode;
+		var children = parent.children;
+		if(this.classList.contains("mui-icon-star")) {
+			for(var i = 0; i < index; i++) {
+				children[i].classList.remove('mui-icon-star');
+				children[i].classList.add('mui-icon-star-filled');
+			}
+		} else {
+			for(var i = index; i < 5; i++) {
+				children[i].classList.add('mui-icon-star')
+				children[i].classList.remove('mui-icon-star-filled')
+			}
+		}
+		starIndex = index;
+	});
+	$(function(){
+		$('#navWrap').load('../module/nav.html#nav')
+	});
+	</script>
+
+</html>

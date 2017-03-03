@@ -1,0 +1,197 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+  -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+  box-shadow: 0 3px 10px 0px #EEEEEE!important;
+}
+.header a {
+  background-color: #fff;
+}
+.header a.right {
+  float: right;
+  color: #666;
+  font-size: 14px;
+  border: 1px solid #EEEEEE;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 0.3rem;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 15px;
+  margin-top: 0.08rem;
+}
+.header i {
+  font-size: 20px;
+  color: #444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+  box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+/*我的订单*/
+.order {
+  width: 100%;
+  margin-top: 0.56rem;
+}
+.order-shop {
+  width: 100%;
+  height: 46px;
+  background-color: #fff !important;
+  line-height: 46px;
+}
+.order-shop input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.order-shop input[type=checkbox]:before {
+  display: block;
+  border-radius: 10px;
+  margin-left: 0;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 0;
+  font-weight: 100;
+}
+.order-shop a {
+  display: block;
+  background-color: #fff !important;
+  font-size: 14px;
+  color: #666;
+  margin-left: 50px;
+}
+.order-shop a i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+.order-pro {
+  width: 100%;
+  height: 120px;
+  line-height: 46px;
+  border-bottom: 4px solid #fff;
+}
+.order-pro input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.order-pro input[type=checkbox]:before {
+  display: block;
+  border-radius: 10px;
+  margin-left: 0;
+  font-size: 20px;
+  line-height: 120px;
+  margin-top: 0;
+  font-weight: 100;
+}
+.order-pro a {
+  display: block;
+  background-color: #f9f9f9 !important;
+  height: 120px;
+  margin-left: 50px;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.order-pro img {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+}
+.order-pro div.order-p1 {
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  padding-right: 0.1rem;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666;
+}
+.order-pro div.order-p2 {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+}
+.order-pro div.order-p2 span {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 14px;
+  color: #ff6600;
+}
+.order-pro div.order-p2 div {
+  height: 28px;
+  border: 1px solid #EEEEEE;
+  margin-top: 5px;
+  border-radius: 14px;
+}
+.order-pro div.order-p2 div input {
+  border-left: 1px solid #EEEEEE!important;
+  border-right: 1px solid #EEEEEE!important;
+  background-color: #fff;
+}
+.order-pro div.order-p2 div button {
+  background-color: #fff;
+}
+.footer-checkbox {
+  width: 100%;
+  background-color: #fff !important;
+  line-height: 46px;
+  border-right: 1px solid #eee;
+}
+.footer-checkbox input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.footer-checkbox input[type=checkbox]:before {
+  display: block;
+  border-radius: 10px;
+  margin-left: 0;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 0;
+  font-weight: 100;
+}
+.footer-checkbox span {
+  font-size: 14px;
+  color: #444;
+  margin-left: 35px!important;
+}
+.footer-checkbox span b {
+  font-weight: 100;
+  color: #ff6600;
+}
+.order-center {
+  font-size: 14px;
+  color: #444 !important;
+}
+.order-center span {
+  color: #ff6600;
+}
+.order-right {
+  font-size: 14px;
+  color: #fff !important;
+  background-color: #ff6600 !important;
+}
+.order-last {
+  font-size: 14px;
+  color: #fff !important;
+  background-color: #d90000 !important;
+}

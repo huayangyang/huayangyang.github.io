@@ -1,0 +1,204 @@
+@charset "utf-8";
+.color(@color:#666666;) {
+    color: @color;
+}
+.bgcolor(@bgcolor:#ff6600;) {
+    background-color: @bgcolor;
+}
+html,
+body {
+    .bgcolor(#f9f9f9);
+    overflow-x: hidden;
+}
+.mui-content {
+    padding-top: 0 !important;
+}
+.header {
+    padding-top: 0;
+    line-height: 0.46rem;
+    -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    box-shadow: 0 3px 10px 0px #EEEEEE!important;
+    a {
+        .bgcolor(#fff);
+    }
+    a.right{
+        float: right;
+        .color(#666);
+        font-size: 14px;
+        border: 1px solid #EEEEEE;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding:0;
+        line-height: 0.3rem;
+        padding-left: 14px;
+        padding-right: 14px;
+        border-radius: 15px;
+        margin-top: 0.08rem;
+    }
+    i {
+        font-size: 20px;
+        .color(#444);
+    }
+    h1 {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 18px;
+        .color(#444);
+    }
+}
+.footer{
+     -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+     box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+/*我的订单*/
+.order{
+    width: 100%;
+    margin-top: 0.56rem;
+}
+.order-shop{
+    width: 100%;
+    height: 46px;
+    .bgcolor(#fff)!important;
+    line-height: 46px;
+    input[type=checkbox]{
+        width: 20px;
+        height: 20px;
+    }
+    input[type=checkbox]:before{
+        display: block;
+        border-radius: 10px;
+        margin-left: 0;
+        font-size: 20px;
+        line-height: 36px;
+        margin-top: 0;
+        font-weight: 100;
+    }
+    a{
+        display: block;
+        .bgcolor(#fff)!important;
+        font-size: 14px;
+        .color(#666);
+        margin-left: 50px;
+        i{
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    }
+}
+.order-pro{
+    width: 100%;
+    height: 120px;
+    line-height: 46px;
+    border-bottom: 4px solid #fff;
+    input[type=checkbox]{
+        width: 20px;
+        height: 20px;
+    }
+    input[type=checkbox]:before{
+        display: block;
+        border-radius: 10px;
+        margin-left: 0;
+        font-size: 20px;
+        line-height: 120px;
+        margin-top: 0;
+        font-weight: 100;
+    }
+    a{
+        display: block;
+        .bgcolor(#f9f9f9)!important;
+        height: 120px;
+        margin-left: 50px;
+        padding-top: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    img{
+        display: block;
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-right: 0.1rem;
+        margin-left: 0.1rem;
+    }
+    div.order-p1{
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        padding-right: 0.1rem;
+        line-height: 22px;
+        font-size: 14px;
+        .color(#666);
+    }
+    div.order-p2{
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        line-height: 40px;
+        span{
+            display: inline-block;
+            line-height: 40px;
+            font-size: 14px;
+            .color(#ff6600);
+        }
+        div{
+            height: 28px;
+            border: 1px solid #EEEEEE;
+            margin-top: 5px;
+            border-radius: 14px;
+            input{
+                border-left: 1px solid #EEEEEE!important;
+                border-right: 1px solid #EEEEEE!important;
+                .bgcolor(#fff);
+            }
+            button{
+                .bgcolor(#fff);
+            }
+        }
+    }
+}
+.footer-checkbox{
+    width: 100%;
+    .bgcolor(#fff)!important;
+    line-height: 46px;
+    border-right: 1px solid #eee;
+    input[type=checkbox]{
+        width: 20px;
+        height: 20px;
+    }
+    input[type=checkbox]:before{
+        display: block;
+        border-radius: 10px;
+        margin-left: 0;
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 0;
+        font-weight: 100;
+    }
+
+    span{
+        font-size: 14px;
+        .color(#444);
+        margin-left: 35px!important;
+        b{
+            font-weight: 100;
+            .color(#ff6600);
+        }
+    }
+}
+.order-center{
+    font-size: 14px;
+    .color(#444)!important;
+    span{
+        .color(#ff6600);
+    }
+}
+.order-right{
+    font-size: 14px;
+    .color(#fff)!important;
+    .bgcolor(#ff6600)!important;
+}
+.order-last{
+    font-size: 14px;
+    .color(#fff)!important;
+    .bgcolor(#d90000)!important;
+}

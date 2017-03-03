@@ -1,0 +1,229 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+  -webkit-box-shadow: 0 3px 10px 0 #EEEEEE!important;
+  box-shadow: 0 3px 10px 0 #EEEEEE!important;
+}
+.header a {
+  background-color: #ffffff;
+}
+.header i {
+  font-size: 20px;
+  color: #444444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0 #dfdfdf;
+  box-shadow: 0 -1px 70px 0 #dfdfdf;
+}
+/*订单详情*/
+.orderDetail {
+  width: 100%;
+  margin-top: 0.48rem;
+  margin-bottom: 0.8rem;
+}
+.current-order {
+  width: 100%;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  background-color: #ffffff;
+  margin-bottom: 0.1rem;
+}
+.current-top {
+  width: 100%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 16px;
+  color: #666666;
+  border-bottom: 1px solid #F9F9F9;
+}
+.current-b {
+  width: 100%;
+  padding-bottom: 0.16rem;
+}
+.current-b p {
+  line-height: 26px;
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 0;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+.current-b p span {
+  display: block;
+  float: left;
+}
+.current-b p span:first-child {
+  color: #aaaaaa;
+  width: 70px;
+}
+.current-b p span:last-child {
+  flex: 9;
+}
+.shop-detail {
+  width: 100%;
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 14px;
+  color: #666666;
+  background-color: #ffffff;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+/*订单列表*/
+.orderCenter-list {
+  width: 100%;
+}
+.orderCenter-list .mui-row {
+  clear: both;
+  background-color: #ffffff;
+}
+.list-top {
+  height: 46px;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border-bottom: 1px solid #F9F9F9;
+  padding-top: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.list-top span {
+  font-size: 14px;
+  color: #666666;
+}
+.list-top span i.first {
+  margin-right: 0.05rem;
+}
+.list-body {
+  width: 100%;
+}
+.proList-ul-1 {
+  width: 100%;
+  margin: 0 auto;
+}
+.proList-ul-1 li {
+  width: 100%;
+  height: 1.2rem;
+}
+.proList-ul-1 li a {
+  display: block;
+  width: 100%;
+  height: 1.2rem;
+  padding-top: 0.07rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding-bottom: 0.1rem;
+}
+.proList-ul-1 img {
+  display: block;
+  float: left;
+  width: 1.06rem;
+  height: 1.06rem;
+  margin-right: 0.1rem;
+}
+.proList-ul-1 div {
+  width: 2.9rem;
+  height: 1.06rem;
+  float: left;
+  padding-right: 0.25rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.proList-ul-1 .proList-p1 {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+.proList-ul-1 .proList-p2 {
+  font-size: 12px;
+  color: #aaaaaa;
+  height: 12px;
+  margin-top: 0.25rem;
+}
+.proList-ul-1 .proList-p2 span.last {
+  margin-left: 0.15rem;
+}
+.proList-ul-1 .proList-p2 i {
+  font-size: 14px;
+  color: #ff6600;
+  font-style: normal;
+}
+.list-btm {
+  border-top: 1px solid #F9F9F9;
+  text-align: right;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #666666;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.list-btm span.last {
+  margin-left: 0.1rem;
+}
+.list-detail {
+  width: 100%;
+  background-color: #ffffff;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border-top: 1px solid #F9F9F9;
+}
+.list-detail .mui-row {
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  text-align: center;
+  clear: both;
+}
+.list-detail .mui-row.last {
+  height: 62px;
+  line-height: 62px;
+}
+.list-detail .mui-row.last-pre {
+  height: 46px;
+  line-height: 46px;
+  border-top: 1px solid #F9F9F9;
+  border-bottom: 1px solid #F9F9F9;
+  font-size: 14px;
+}
+.list-detail .mui-row.last-pre span {
+  color: #666666;
+}
+.list-detail .mui-row.last-pre span:last-child {
+  color: #ff6600;
+}
+.list-detail .mui-row.last-prepre span:last-child {
+  color: #ff6600;
+}
+.list-detail .mui-row i {
+  position: relative;
+  top: 1px;
+  margin-right: 0.05rem;
+  color: #f4c600;
+}
+.list-detail .mui-row span {
+  display: inline-block;
+  color: #aaaaaa;
+}
+.list-detail .mui-row span.first {
+  float: left;
+}
+.list-detail .mui-row span.last {
+  float: right;
+}

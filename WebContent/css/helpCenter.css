@@ -1,0 +1,77 @@
+@charset "utf-8";
+html,
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.mui-content {
+  padding-top: 0 !important;
+}
+.header {
+  padding-top: 0;
+  line-height: 0.46rem;
+  -webkit-box-shadow: 0 3px 10px 0px #EEEEEE!important;
+  box-shadow: 0 3px 10px 0px #EEEEEE!important;
+}
+.header a {
+  background-color: #fff;
+}
+.header i {
+  font-size: 20px;
+  color: #444;
+}
+.header h1 {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 18px;
+  color: #444;
+}
+.footer {
+  -webkit-box-shadow: 0 -1px 70px 0px #dfdfdf;
+  box-shadow: 0 -1px 70px 0px #dfdfdf;
+}
+/*帮助中心*/
+.helpCenter {
+  width: 100%;
+  margin-top: 0.46rem;
+  margin-bottom: 0.8rem;
+  background-color: #fff;
+  height: 100%;
+}
+.helpCenter-wrap {
+  width: 100%;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.helpCenter-top {
+  width: 100%;
+  height: 68px;
+  line-height: 68px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #F9F9F9;
+  font-size: 18px;
+  color: #444;
+}
+.helpCenter-b {
+  font-size: 14px;
+  color: #666;
+  padding-top: 0.1rem;
+}
+.helpCenter-b p {
+  font-size: 14px;
+  color: #666;
+}
+.helpCenter-b p span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  border: 1px solid #666;
+  line-height: 14px;
+  text-align: center;
+  font-size: 10px;
+}
+.helpCenter-b .mui-row {
+  margin-bottom: 0.2rem;
+}

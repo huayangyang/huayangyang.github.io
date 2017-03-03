@@ -1,0 +1,251 @@
+@charset "utf-8";
+.color(@color:#666666;) {
+    color: @color;
+}
+.bgcolor(@bgcolor:#ff6600;) {
+    background-color: @bgcolor;
+}
+html,
+body {
+    .bgcolor(#f9f9f9);
+    overflow-x: hidden;
+}
+.mui-content {
+    padding-top: 0 !important;
+}
+.header {
+    padding-top: 0;
+    line-height: 0.46rem;
+    -webkit-box-shadow: 0 3px 10px 0 #EEEEEE;
+    box-shadow: 0 3px 10px 0 #EEEEEE;
+    a {
+        .bgcolor(#fff);
+    }
+    i {
+        font-size: 20px;
+        .color(#444);
+    }
+    h1 {
+        height: 0.46rem;
+        line-height: 0.46rem;
+        font-size: 18px;
+        .color(#444);
+    }
+}
+.footer {
+    -webkit-box-shadow: 0 -1px 70px 0 #dfdfdf;
+    box-shadow: 0 -1px 70px 0 #dfdfdf;
+}
+/*代理人申请*/
+.agent {
+    width: 100%;
+    position: absolute;
+    top: 0.46rem;
+    left: 0;
+    height: 100%;
+    &.display {
+        display: none;
+    }
+}
+.agent-apply {
+    form {
+        width: 3.5rem;
+        margin: 0.24rem auto;
+    }
+}
+.agent-check {
+    width: 100%;
+    input {
+        width: 2.34rem;
+        margin-right: 0.1rem;
+        float: left;
+        height: 0.4rem;
+        box-sizing: border-box;
+    }
+    button {
+        width: 1.06rem;
+        height: 0.4rem;
+        border: none;
+        .bgcolor;
+        .color(#fff);
+    }
+}
+.agent-xieyi {
+    padding-left: 0;
+    clear: both;
+    padding-top: 0.1rem;
+    input {
+        width: 0.16rem;
+        height: 0.16rem;
+        float: left;
+        margin-right: 0.07rem;
+        .bgcolor(#fff);
+        border: 1px solid #EEEEEE;
+        .color(#FFFFFF);
+    }
+    p {
+        height: 0.16rem;
+        line-height: 0.16rem;
+        font-size: 12px;
+        .color(#aaa);
+    }
+}
+.agent-tj {
+    button {
+        width: 100%;
+        height: 0.4rem;
+        .bgcolor;
+        width: 100%;
+        border: 0;
+        .color(#fff);
+    }
+}
+.agent-id {
+    width: 100%;
+    clear: both;
+    p {
+        font-size: 14px;
+        .color(#666);
+        clear: both;
+        span {
+            font-size: 12px;
+            color: #d90000;
+        }
+    }
+    a {
+        display: block;
+        position: relative;
+        float: left;
+        width: 0.8rem;
+        height: 0.8rem;
+        overflow: hidden;
+        margin-bottom: 0.2rem;
+        margin-right: 0.13rem;
+        .bgcolor(#f9f9f9);
+        border: 1px solid #EEEEEE;
+        text-align: center;
+        padding-top: 0.13rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        i {
+            font-size: 32px;
+            .color(#aaa);
+        }
+        span {
+            display: block;
+            font-size: 12px;
+            .color(#aaa);
+        }
+        input {
+            position: absolute;
+            display: block;
+            z-index: 10;
+            width: 0.8rem;
+            height: 0.8rem;
+            opacity: 0;
+        }
+    }
+}
+/*提示*/
+.agent-prompt {
+    width: 3.5rem;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+}
+.agent-pro1 {
+    width: 0.8rem;
+    height: 0.8rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #6fbb2f;
+    color: #6fbb2f;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+    line-height: 0.8rem;
+    text-align: center;
+    i {
+        font-size: 40px;
+    }
+}
+.agent-pro2 {
+    width: 100%;
+    .color(#6fbb2f);
+    margin-top: 0.25rem;
+    font-size: 26px;
+    height: 0.26rem;
+    line-height: 0.26rem;
+    margin-bottom: 0.33rem;
+    text-align: center;
+}
+.agent-pro3 {
+    width: 100%;
+    font-size: 14px;
+    .color(#666);
+}
+.agent-pro4 {
+    width: 100%;
+    font-size: 14px;
+    .color(#666);
+    margin-bottom: 0.4rem;
+    span {
+        .color(#ff6600);
+    }
+}
+.agent-pro5 {
+    width: 100%;
+    button {
+        width: 100%;
+        height: 0.4rem;
+        .bgcolor;
+        border: 0;
+        .color(#fff);
+        font-size: 14px;
+    }
+}
+/*用户协议*/
+.reg-deal {
+    &.display{
+        display: none;
+    }
+    width: 100%;
+    height: 100%;
+    .bgcolor(#646464);
+    padding: 0.2rem 0.1rem;
+    box-sizing: border-box;
+    margin-top: 0.46rem;
+}
+.reg-deal-wrap {
+    width: 100%;
+    height: 5.40rem;
+    .bgcolor(#fff);
+    padding: 0.1rem;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.reg-deal-btn-wrap {
+    .bgcolor(#646464);
+    width: 100%;
+}
+.reg-deal-btn {
+    width: 100%;
+    margin: 0 auto;
+    .bgcolor(#FFFFFF);
+    text-align: center;
+    button {
+        width: 1.6rem;
+        font-size: 14px;
+        height: 0.4rem;
+        .bgcolor;
+        border: none;
+        color: #FFFFFF;
+        margin-bottom: 0.08rem;
+        margin-top: 0.08rem;
+    }
+    button.left {
+        .bgcolor(#fff);
+        color: #AAAAAA;
+        border: 0.01rem solid #EEEEEE;
+        box-sizing: border-box;
+    }
+}
+

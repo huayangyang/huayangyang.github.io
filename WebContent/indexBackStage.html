@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>主页BackStage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.bigcolorpicker.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/indexBackStage.css" />
+	</head>
+
+	<body>
+		<nav class="mui-bar mui-bar-tab footer">
+			<a id="save1" class="mui-tab-item" href="html/activity.html">
+				<span class="mui-tab-label">保存一</span>
+			</a>
+			<a id="save2" class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-tab-label">保存二</span>
+			</a>
+			<a id="save3" class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-tab-label">保存三</span>
+			</a>
+		</nav>
+		<div id="indexBackStage">
+			<!--超实惠-->
+			<div id="template1">
+				<div class="template">
+					<div class="cheap backStage">
+						<h3>—&nbsp;超实惠&nbsp;—</h3>
+						<div class="backMask">
+							<button type="button" class="left fixTitle"><i class="iconfont">&#xe62d;</i>修改标题</button>
+							<button class="addBlock right" type="button"><i class="iconfont">&#xe62e;</i>增加模块</button>
+						</div>
+					</div>
+					<div class="cheap-wrap">
+						<div class="mui-row cheap-flex">
+							<div class="left">
+								<a href="#" class="backStage"><img class="" src="img/index/activity-left-1-194x104PX.jpg" />
+									<div class="backMask">
+										<button type="button" class="left fixChildPlateform"><i class="iconfont">&#xe62d;</i>修改</button>
+										<button type="button" class="right"><i class="iconfont">&#xe61c;</i>删除</button>
+									</div>
+								</a>
+								<a href="#" class="backStage"><img class="" src="img/index/activity-left-2-194x104PX.jpg" />
+									<div class="backMask">
+										<button type="button" class="left fixChildPlateform"><i class="iconfont">&#xe62d;</i>修改</button>
+										<button type="button" class="right"><i class="iconfont">&#xe61c;</i>删除</button>
+									</div>
+								</a>
+							</div>
+							<div class="right">
+								<a href="#" class="backStage"><img class="cheap-right-first" src="img/index/activity-right-max-194x213PX.jpg" />
+									<div class="backMask">
+										<button type="button" class="left fixChildPlateform"><i class="iconfont">&#xe62d;</i>修改</button>
+										<button type="button" class="right"><i class="iconfont">&#xe61c;</i>删除</button>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="addItem1">
+							<button><i class="iconfont">&#xe62e;</i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--新品于热卖-->
+			<div id="template2">
+				<div class="newHot-set backStage">
+					添加/删除标题
+					<div class="backMask">
+						<button type="button" class="left addTitle"><i class="iconfont">&#xe62d;</i>添加标题</button>
+						<button type="button" class="right clearTitle"><i class="iconfont">&#xe62d;</i>删除标题</button>
+					</div>
+				</div>
+				<div class="newHot">
+					<div class="newHot-header">
+						<button class="isActive btnList">—&nbsp;新品&nbsp;—
+					</button>
+						<button class="btnList">—&nbsp;热卖&nbsp;—
+					</button>
+					</div>
+					<ul class="newHot-list">
+						<li class="newHot-li backStage">
+							<a href="javascript:void(0);">
+								<img class="" src="img/index/porduct-100x100px.jpg">
+								<div class="">
+									<p class='newHot-p1'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+									<p class='newHot-p2'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								</div>
+							</a>
+							<div class="backMask">
+								<button type="button" class="left fixChildPlateform2"><i class="iconfont">&#xe62d;</i>修改</button>
+								<button type="button" class="right clearChildItem2"><i class="iconfont">&#xe61c;</i>删除</button>
+							</div>
+						</li>
+						<li class="newHot-li newHot-add">
+							<div class="mui-row addItem2">
+								<button><i class="iconfont">&#xe62e;</i></button>
+							</div>
+						</li>
+					</ul>
+					<ul class="newHot-list zc-hidden">
+						<li class="newHot-li newHot-add">
+							<div class="mui-row addItem2">
+								<button><i class="iconfont">&#xe62e;</i></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--店铺推荐-->
+			<div id="template3">
+				<div class="shopTj">
+					<div class="shopTj-header">
+						<h3>— 店铺推荐 —</h3>
+					</div>
+					<div class="shopTj-body">
+						<ul class="shopTj-ul">
+							<li class="backStage">
+								<a href="#">
+									<img class="" src="img/index/shop-title-192x80px-1.jpg">
+									<p class="shopTj-p1">幸福就是可以一起睡觉</p>
+									<p class="shopTj-p2">幸福就是可以一起睡觉</p>
+								</a>
+								<div class="backMask">
+									<button type="button" class="left fixChildPlateform3"><i class="iconfont">&#xe62d;</i>修改</button>
+									<button type="button" class="right"><i class="iconfont">&#xe61c;</i>删除</button>
+								</div>
+							</li>
+							<li class="backStage">
+								<a href="#">
+									<img class="" src="img/index/shop-title-192x80px-2.jpg">
+									<p class="shopTj-p1">幸福就是可以一起睡觉</p>
+									<p class="shopTj-p2">幸福就是可以一起睡觉</p>
+								</a>
+								<div class="backMask">
+									<button type="button" class="left fixChildPlateform3"><i class="iconfont">&#xe62d;</i>修改</button>
+									<button type="button" class="right"><i class="iconfont">&#xe61c;</i>删除</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-row addItem3">
+						<button><i class="iconfont">&#xe62e;</i></button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery.bigcolorpicker.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/indexBackStage.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

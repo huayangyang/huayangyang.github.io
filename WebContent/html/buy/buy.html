@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>商品购买</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/buy.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="javascript:goBack();"><i class="iconfont">&#xe60b;</i></a>
+			<h1 class="mui-title">华为 荣耀 V8 博广金 32G 全网通</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab footer">
+			<a id="kefu" class="mui-tab-item" href="javascript:void(0)">
+				<span class="mui-icon iconfont">&#xe61e;</span>
+				<span class="mui-tab-label">联系客服</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon iconfont">&#xe616;</span>
+				<span class="mui-tab-label">收藏</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon iconfont">&#xe608;</span>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a class="mui-tab-item addChart" href="#tabbar-with-contact">
+				<span class="mui-tab-label">加入购物车</span>
+			</a>
+		</nav>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../../img/prodownshop/product-414x250.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<div class="buy">
+			<div class="buy-xiangqing">
+				<p class="xiangqing">华为 荣耀 V8 博广金 32G 全网通
+					<a href="#">详情<i class="iconfont">&#xe60c;</i></a>
+				</p>
+				<p class="jiage"><span>￥725</span>销量:163件</p>
+			</div>
+			<div class="buy-lingjuan">
+				<div class="lingjuan-title">领卷:</div>
+				<div class="lingjuan-card">
+					<a href="#" class="">
+						<span class="first"><b>￥</b>50</span>
+						<span class="last">满999可用</span>
+					</a>
+					<div class="buy-shdow">
+						<span class="first"><i class="iconfont">&#xe618;</i></span>
+						<span>已领取</span>
+					</div>
+				</div>
+			</div>
+			<div class="buy-peizhi">
+				<div class="peizhi-list">
+					颜色 :
+					<a href="#">金色</a>
+					<a href="#">银色</a>
+				</div>
+				<div class="peizhi-list">
+					容量 :
+					<a href="#">16G</a>
+					<a href="#">32G</a>
+				</div>
+				<div class="peizhi-list">
+					版本 :
+					<a class="buy-checked" href="#">金色</a>
+					<a href="#">银色</a>
+				</div>
+				<div class="peizhi-list">
+					数量 :
+					<div class="mui-numbox">
+						<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+						<input id="box" class="mui-input-numbox" type="number" />
+						<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+					</div>
+				</div>
+				<div class="peizhi-list">
+					店铺 :
+					<a class="buy-checked" href="#"><i class="iconfont">&#xe610;</i>朵朵云</a>
+				</div>
+			</div>
+			<div class="buy-pingjia">
+				<a href="#">
+					评价 （62）<span><i class="iconfont">&#xe60c;</i></span>
+				</a>
+			</div>
+		</div>
+		<div id="weixinkefu" class="weixinkefu zc-hidden"><img src="../../img/buy/weixinerweima.png"/></div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../js/mui.min.js"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		document.getElementById("kefu").addEventListener('tap', function() {
+			var mask = mui.createMask(function() {
+				this.close();
+				document.getElementById("weixinkefu").className='weixinkefu zc-hidden';
+				document.getElementsByTagName('body')[0].style.overflowY='scroll';
+			});
+			mask.show();
+			document.getElementById("weixinkefu").className='weixinkefu';
+			document.getElementsByTagName('body')[0].style.overflowY='hidden';
+		});
+	</script>
+
+</html>
