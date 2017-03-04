@@ -1,0 +1,588 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+input{
+	padding-left: 3px;
+}
+#confirmOrder{
+	padding-left: 135px;
+	padding-right: 136px;
+	width: 975px;
+	height: 1700px;
+	padding-top: 17px;
+	background: #F9F9F9;
+}
+#shopHeader>ul>li:nth-child(2){
+	background: url(../img/shopCar/rate5.png) no-repeat 0px 41px;
+}
+.confirm1{
+	width: 992px;
+	height: 431px;
+	background: white;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+}
+.confirm1>h3{
+	width: 147px;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+	color: #666666;
+	font-size: 17px;
+}
+.confirm1-1{
+	width: 660px;
+	height: 320px;
+	margin-left: 49px;
+	margin-top: 23px;
+	position: relative;
+}
+.confirm1-address{
+	width: 660px;
+	height: 320px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	background: white;
+}
+.confirm1-address1{
+	width: 210px;
+	height: 103px;
+	padding-top: 15px;
+	padding-left: 15px;
+	position: relative;
+	background:white url(../img/shopCar/address.png) no-repeat left top;
+}
+.confirm1-address1>p{
+	width: 192px;
+	height: 25px;
+	line-height: 25px;
+	padding-right: 1px;
+	
+	color: #666666;
+	text-align: left;
+	font-size: 11px;
+}
+.confirm1-address1>p:nth-child(2){
+	word-wrap: break-word;
+	line-height: 12px;
+}
+.confirm1-address1>a{
+	padding: 2px;
+	display: block;
+	position: absolute;
+	font-size: 12px;
+	color: #FF3300;
+}
+.confirm1-addressA1{
+	top: 10px;
+	left: 156px;
+}
+.confirm1-addressA2{
+	top: 10px;
+	left: 182px;
+}
+.confirm1-address>a{
+	display: block;
+	width: 93px;
+	height: 27px;
+	line-height: 27px;
+	background: #F6F6F6;
+	border: 1px solid #CCCCCC;
+	margin-top: 22px;
+	font-size: 11px;
+	color: #666666;
+	text-align: center;
+}
+.confirm1-address>a>span{
+	font-weight: 900;
+	padding-right: 5px;
+}
+.confirm1-1-ul{
+	width: 62px;
+	height: 320px;
+	float: left;
+	margin-right: 10px;
+}
+.confirm1-1-ul>li{
+	width: 62px;
+	float: left;
+	height: 44px;
+	display: block;
+	line-height: 44px;
+	text-align: right;
+	font-size: 11px;
+	color: #666666;
+}
+.confirm1-1-ul>li>span{
+	color: #FF3300;
+}
+.confirm1-1-form{
+	width: 585px;
+	height: 312px;
+	padding-top: 8px;
+	float: left;
+}
+.confirm1-1-form select{
+	border: 1px solid #DDDDDD;
+}
+.confirm1-ipt1{
+	display: inline-block;
+	width: 210px;
+	height: 25px;
+}
+.confirm1-ipt2{
+	display: inline-block;
+	width: 487px;
+	height: 30px;
+	margin-top: 17px;
+	border: 1px solid #DDDDDD;
+}
+.confirm1-ipt3{
+	display: inline-block;
+	width: 487px;
+	height: 30px;
+	margin-top: 13px;
+	border: 1px solid #DDDDDD;
+}
+.confirm1-ipt4{
+	width: 110px;
+	height: 26px;
+	display: inline-block;
+	margin-top: 13px;
+	border: 1px solid #DDDDDD;
+}
+.confirm1-ipt5{
+	width: 210px;
+	height: 25px;
+	display: inline-block;
+	margin-top: 17px;
+	border: 1px solid #DDDDDD;
+}
+.confirm1-btn{
+	display: inline-block;
+	width: 70px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	background: #E31939;
+	color: white;
+	font-size: 11px;
+	margin-top: 25px;
+	letter-spacing: 5px;
+	border: none;
+}
+.confirm2{
+	width: 992px;
+	height: 114px;
+	background: white;
+	border-bottom: 1px solid #CCCCCC;
+}
+.confirm2-1{
+	width: 992px;
+	height: 45px;
+}
+.confirm2-1>h3{
+	width: 147px;
+	height: 46px;
+	line-height: 47px;
+	text-align: center;
+	color: #666666;
+	font-size: 17px;
+	float: left;
+}
+.confirm2-1>p{
+	width: 446px;
+	height: 47px;
+	line-height: 47px;
+	font-size: 13px;
+	color: #a1a1a1;
+	text-indent: 5px;
+}
+.confirm2-2{
+	width: 992px;
+	height: 69px;
+	padding-left: 0;
+}
+.confirm2-2>a{
+	display: block;
+	float: left;
+	padding: 8px 16px 10px 15px;
+	font-size: 11px;
+	color: #666666;
+	margin-top: 20px;
+	margin-right: 40px;
+	border: 1px solid #CCCCCC;
+}
+.confirm2-2>a>input{
+	margin-top: 0px;
+	display: block;
+	float: left;
+}
+.confirm2-2>a:nth-child(4){
+	display: block;
+	float: left;
+	font-size: 11px;
+	color: #666666;
+	margin-top: 20px;
+	margin-right: 40px;
+	padding: 4px 16px 4px 15px;
+	border: 1px solid #CCCCCC;
+}
+ .confirm2-2>a:nth-child(4)>span{
+ 	display: block;
+ 	float: left;
+ }
+ .confirm2-2>a:nth-child(4)>span:nth-child(1), .confirm2-2>a:nth-child(4)>span:nth-child(2){
+ 	padding-top: 5px;
+ }
+.confirm3{
+	width: 950px;
+	padding-left: 21px;
+	padding-right: 21px;
+	min-height: 600px;
+	height: auto!important;
+	height: 600px;
+	background: white;
+}
+.confirm3:after{
+	content: '.';
+	height: 0;
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+}
+.confirm3-1:after{
+	content: '.';
+	height: 0;
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+}
+.confirm3-1{
+	width: 950px;
+	min-height: 356px;
+	height: auto!important;
+	height: 356px;
+}
+
+.confirm3-1>h3{
+	width: 147px;
+	height: 43px;
+	line-height: 43px;
+	color: #666666;
+	text-indent: 5px;
+	font-size: 17px;
+	float: left;
+	display: block;
+}
+.confirm3-1>p{
+	clear: both;
+	width: 948px;
+	height: 34px;
+	border: 1px solid #d9d9d9;
+}
+.confirm3-1>p>a{
+	display: block;
+	float: left;
+	height: 34px;
+	line-height: 34px;
+	font-size: 11px;
+	color: #666666;
+}
+.confirm3-1>p>a:nth-child(1){
+	width: 355px;
+	text-indent: 30px;
+}
+.confirm3-1>p>a:nth-child(2){
+	width: 255px;
+	text-align: center;
+}
+.confirm3-1>p>a:nth-child(3){
+	width: 155px;
+	text-align: center;
+}
+.confirm3-1>p>a:nth-child(4){
+	width: 180px;
+	text-align: center;
+}
+.confirm3-1-1{
+	width: 948px;
+	height: 274px;
+	border: 1px solid #d9d9d9;
+	position: relative;
+}
+.confirm3-1-1:after{
+	content: '.';
+	height: 0;
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+}
+.confirm3-p1{
+	width: 948px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 11px;
+	color: #666666;
+	background: #FAFAFA;
+	text-indent: 10px;
+}
+.confirm3-p2{
+	width: 899px;
+	height: 95px;
+	padding-left: 49px;
+	padding-top: 28px;
+}
+.confirm3-p2>a{
+	display: block;
+	float: left;
+}
+.confirm3-p2>a:nth-child(1){
+	width: 60px;
+	height: 60px;
+	border: 1px solid #DDDDDD;
+}
+.confirm3-p2>a:nth-child(1)>img{
+	width: 60px;
+	height: 60px;
+}
+.confirm3-p2>a:nth-child(2){
+	width: 239px;
+	height: 62px;
+	font-size: 11px;
+	color: #666666;
+	padding-left: 9px;
+	line-height: 18px;
+}
+.confirm3-p2>a:nth-child(3){
+	width: 177px;
+	height: 62px;
+	margin-left: 35px;
+	font-size: 8px;
+	color: #666666;
+	text-align: center;
+	line-height: 62px;
+}
+.confirm3-p2>a:nth-child(4){
+	width: 130px;
+	height: 62px;
+	line-height: 62px;
+	font-size: 8px;
+	color: #E31939;
+	font-size: 11px;
+	margin-left: 113px;
+	
+}
+.confirm3-p2>a:nth-child(5){
+	width: 100px;
+	height: 62px;
+	line-height: 62px;
+	font-size: 8px;
+	color: #E31939;
+	font-size: 11px;
+	margin-left: 30px;
+}
+.confirm3-p3{
+	width: 899px;
+	height: 65px;
+	padding-left: 49px;
+	padding-top: 15px;
+	font-size: 12px;
+	color: #666666;
+	line-height: 30px;
+	border-top: 1px dashed #DDDDDD;
+	border-bottom: 1px dashed #DDDDDD;
+}
+.confirm3-p3>span{
+	display: block;
+}
+.confirm3-p3>span:nth-child(2){
+	color: #999999;
+}
+.confirm3-p4{
+	width: 918px;
+	min-height: 30px;
+	padding-top: 12px;
+	padding-left: 30px;
+	height: auto!important;
+	height: 30px;
+	position: relative;
+}
+.confirm3-p4>a{
+	width: 120px;
+	height: 18px;
+	display: block;
+}
+.confirm3-p4>a>span{
+	display: block;
+	float: left;
+}
+.confirm3-p4>a>span:nth-child(1){
+	width: 19px;
+	height: 18px;
+	background:url(../img/shopCar/rate6.png) no-repeat center;
+}
+.confirm3-p4>a>span:nth-child(2){
+	width: 99px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #E31939;
+}
+.confirm3-p4>a:hover>span:nth-child(2){
+	text-decoration: underline;
+}
+.confirm3-2{
+	width: 948px;
+	height: 461px;
+	border: 1px solid #CCCCCC;
+	margin-top: 10px;
+	background: #FAFAFA;
+}
+.confirm3-2-bill{
+	width: 918px;
+	height: 86px;
+	padding-left: 30px;
+	padding-top: 14px;
+	position: relative;
+	border-bottom: 1px solid #DDDDDD;
+}
+.confirm3-2-bill>a{
+	width: 120px;
+	height: 18px;
+	display: block;
+}
+.confirm3-2-bill>a>span{
+	display: block;
+	float: left;
+}
+.confirm3-2-bill>a>span:nth-child(1){
+	width: 19px;
+	height: 18px;
+	background:url(../img/shopCar/rate6.png) no-repeat center;
+}
+.confirm3-2-bill>a>span:nth-child(2){
+	width: 99px;
+	height: 18px;
+	line-height: 18px;
+	text-align: left;
+	text-indent: 8px;
+	font-size: 12px;
+	color: #E31939;
+}
+.confirm3-2-bill>a:hover>span:nth-child(2){
+	text-decoration: underline;
+}
+.confirm3-2-bill>p{
+	height: 40px;
+	margin-top: 15px;
+	font-size: 11px;
+	color: #666666;
+	/*display: none;*/
+}
+.confirm3-2-balance{
+	width: 948px;
+	height: 57px;
+}
+.confirm3-2-balance>p{
+	color: #666666;
+	font-size: 11px;
+	line-height: 57px;
+	text-indent: 30px;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+}
+.confirm3-2-good{
+	width: 948px;
+	height: 70px;
+	padding-top: 30px;
+}
+.confirm3-2-good>p{
+	width: 948px;
+	text-align: right;
+	line-height: 20px;
+	font-size: 11px;
+	color: #666666;
+}
+.confirm3-2-good>p>span{
+	color: #E31939;
+}
+.confirm3-2-good>p:nth-child(3)>span{
+	font-size: 12px;
+}
+.confirm3-2-way{
+	width: 950px;
+	height: 330px;
+}
+.confirm3-2-way>h3{
+	width: 147px;
+	height: 54px;
+	line-height: 54px;
+	color: #666666;
+	text-indent: 5px;
+	font-size: 17px;
+	float: left;
+	display: block;
+}
+.confirm3-2-way-btm{
+	width: 950px;
+	height: 276px;
+	clear: both;
+}
+.confirm3-2-way-btm>p{
+	width: 948px;
+	height: 58px;
+	text-indent: 15px;
+	line-height: 58px;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #CCCCCC;
+	border-bottom: none;
+}
+.confirm3-2-way-btm>p>input{
+	margin-right: 5px;
+	position: relative;
+	left: 0;
+	top: 3px;
+}
+.confirm3-2-way-btm>p:nth-child(3){
+	border-bottom: 1px solid #CCCCCC;
+}
+.confirm3-2-way-btm>p:nth-child(4){
+	border: none;
+	width: 950px;
+	height: 60px;
+	padding-top: 30px;
+}
+.confirm3-2-way-btm>p:nth-child(4)>a{
+	display: block;
+	width: 140px;
+	height: 40px;
+	border: 1px solid #D9D9D9;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	color: #666666;
+}
+.confirm3-2-way-btm>p:nth-child(4)>a:last-child{
+	float: right;
+	border: none;
+	width: 142px;
+	height:42px;
+	background: #C40000;
+	color: white;
+}

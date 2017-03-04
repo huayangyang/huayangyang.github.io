@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+				background: ghostwhite;
+			}
+			#skip{
+				width: 100%;
+				height: 100px;
+				background: gainsboro;
+				line-height: 50px;
+				padding-left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="skip">
+		<p>注册成功... <span>5</span>秒后 <a href="../login.html">跳转到登录页</a></p>
+	</div>
+	</body id='loginSkip'>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var k=5;
+			var timer=setInterval(function(){
+				k--;
+				$('span').html(k);
+				if(k==0){
+					clearInterval(timer);
+					window.location='../login.html';
+				}
+				
+			},1000);
+			
+		});
+	</script>
+</html>

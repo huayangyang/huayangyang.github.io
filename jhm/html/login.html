@@ -1,0 +1,72 @@
+<div class="login">
+	<div class="login-top">
+		<a href="javascript:void(0)">还没有账号？</a>
+		<a href="register.html">立即注册</a>
+	</div>
+	<div class="login-btm">
+		<form action="" method="post">
+			<p class="login-p1">
+				<label for="userName">用户名</label>
+			</p>
+
+			<input type="text" name="userName" id="userName" placeholder="13243189098" />
+			<br />
+			<p class="login-p2">
+				<label for="pwd">密码</label>
+			</p>
+			<input type="password" name="pwd" id="pwd" placeholder="12345678" />
+			<p class="login-p3">
+				<input name="ckb" class="keepMessage" type="checkbox" checked="checked" />
+				<label for="ckb">请保存我这次的登陆信息</label><a href="javascript:void(0)">忘记密码？</a></p>
+			<input type="button" name="loginBtn" id="loginBtn" value="立即登录" />
+			<p class="login-p4"><a href="javascript:void(0)">微信</a>
+				<a href="javascript:void(0)">QQ</a>
+				<a href="javascript:void(0)">新浪</a>
+				<a href="javascript:void(0)">支付宝</a></p>
+		</form>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var _keep=$('.keepMessage').get(0);
+		$('#userName').blur(function(){
+	//		var reg=localStorage.phone;
+	//		var str=JSON.parse(reg);
+	//		alert(str.username);
+			var _phone=JSON.parse(localStorage.phone);
+			var _phoneUser=_phone.username;
+//			var _emailUser=_email.email;
+			var _username=$('#userName').val();
+			var _userpwd=$('#pwd').val();
+			if(_username!=_phoneUser){
+				alert('用户名不存在！新用户请注册！');
+			}
+		});
+		$('#loginBtn').click(function(){
+//			if(localStorage.phone){
+//				
+//			}
+			var _phone=JSON.parse(localStorage.phone);
+//			var _email=JSON.parse(localStorage.email);
+			var _phoneUser=_phone.username;
+			var _phonePwd=_phone.userpwd;
+//			var _emailUser=_email.email;
+//			var _emailpwd=_email.emailpwd;
+			var _username=$('#userName').val();
+			var _userpwd=$('#pwd').val();
+			if(_username!=_phoneUser){
+				alert('用户名错误！');
+			}else if(_userpwd!=_phonePwd){
+				alert('密码错误！');
+			}else{
+				alert('登录成功！')
+				window.location='index.html';
+			}
+			if(_keep.checked){
+				$('#userName').val(_username);
+				$('#pwd').val(_userpwd);
+			}
+		});
+		
+	});
+</script>

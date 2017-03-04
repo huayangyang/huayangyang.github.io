@@ -1,0 +1,99 @@
+@charset "utf-8";
+/*wetgoods样式----------*/
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.wetgoods{
+	width: 1210px;
+	height: 370px;
+	margin: 0 auto;
+	position: relative;
+}
+.wetgoods-class{
+	width: 1200px;
+	height: 42px;
+}
+.wetgoods-class>a{
+	width: 90px;
+	display: block;
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	color: rgb(102,102,102);
+	font-size: 16px;
+	cursor: pointer;
+}
+.wetgoods-class>a:hover{
+	background: url(../img/wetgood-bottom.png) no-repeat left bottom;
+	color: rgb(221, 16, 46);
+	
+}
+
+.wetgoods-class>a:first-child{
+	margin-right: 15px;
+	text-align: center;
+}
+.wetgoods-commom{
+	opacity: 0;
+	padding: 15px;
+	width: 1168px;
+	height: 274px;
+	position: absolute;
+	top: 41px;
+	left: 0;
+	border: 1px solid #EDEDED;
+}
+.wetgoods-commom>span{
+	display:block;
+	width: 46px;
+	height: 46px;
+	font-size: 30px;
+	position: absolute;
+	background-color: rgb(102,102,102);
+	border-radius: 23px;
+	line-height: 46px;
+	text-align: center;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	z-index: 2;
+	opacity: .2;
+	color: white;
+}
+.goods-left{
+	left: 10px;
+	top: 45%;
+}
+.goods-right{
+	right: 25px;
+	top: 45%;
+}
+.wetgoods-commom>ul>li{
+	display: block;
+	width: 180px;
+	height: 80px;
+	float: left;
+	margin-right: 14px;
+	margin-bottom: 17px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.wetgoods-commom>ul>li>a{
+	position: absolute;
+	display: block;
+	width: 180px;
+	height: 80px;
+	left: 0;
+	top: 0;
+}
+.wetgoods-commom>ul>li>a>img{
+	float: left;
+}

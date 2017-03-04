@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提交订单</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/top.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footerbtm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopCar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/confirmOrder.css"/>
+	</head>
+	<body onload="setup()">
+		<div id="wrap">
+			<div id="shopTop">
+				
+			</div>
+			<div id="shopHeader">
+				<ul>
+					<li><span>查看购物车</span><span></span></li>
+					<li><span>拍下商品</span><span></span></li>
+					<li><span>付款</span><span>3</span></li>
+					<li><span>确认收货</span><span>4</span></li>
+					<li><span>评价</span><span>5</span></li>
+				</ul>
+			</div>
+			<div id="confirmOrder">
+				<div class="confirm1">
+					<h3>1&nbsp;地址选择</h3>
+					<div class="confirm1-1">
+						<div class="confirm1-address">
+							<div class="confirm1-address1">
+								<p class="addressP1"></p>
+								<p class="addressP2"></p>
+								<p class="addressP3"></p>
+								<a class="confirm1-addressA1" href="javascript:void(0)">修改</a><a class="confirm1-addressA2" href="javascript:void(0)">删除</a>
+							</div>
+							<a href="javascript:void(0)">
+								<span>+</span>使用新地址
+							</a>
+						</div>
+						<ul class="confirm1-1-ul">
+							<li><span>*</span>收件人</li>
+							<li><span>*</span>所在地区</li>
+							<li><span>*</span>街道地址</li>
+							<li>电子邮箱</li>
+							<li>邮编</li>
+							<li><span>*</span>手机号码</li>
+						</ul>
+						<form name="frm" class="confirm1-1-form action="" method="get">
+							
+							<input class="confirm1-ipt1" type="text" /><br /><br />
+							<select id="s1">
+								<option>省份</option>
+							</select>
+							<select id="s2">
+								<option>地级市</option>
+							</select>
+							<select id="s3">
+								<option>市、县级市、县</option>
+							</select><br />
+							<input class="confirm1-ipt2" type="text" /><br />
+							<input class="confirm1-ipt3" type="text" /><br />
+							<input class="confirm1-ipt4"  type="text" /><br />
+							<input class="confirm1-ipt5" type="text" /><br />
+							<input class="confirm1-btn" type="button" value="确定" />
+						</form>
+					</div>
+				</div>
+				<div class="confirm2">
+						<div class="confirm2-1">
+							<h3>2&nbsp;送货时间</h3>
+							<p>送货时间仅作参考，快递公司会尽量满足您的要求</p>
+						</div>
+						<div class="confirm2-2">
+							<a href="javascript:void(0)"><input type="radio" />仅工作日送货</a>
+							<a href="javascript:void(0)"><input type="radio" /> 仅周末送货</a>
+							<a href="javascript:void(0)"><input type="radio" /> 工作日/周末/假日均可</a>
+							<a href="javascript:void(0)"><span><input type="radio" class="confirm2-ipt1" /></span><span>指定送货时间</span><span><input type="date"  value="指定送货时间"  class="confirm2-ipt1" /></span></a>
+						</div>
+				</div>
+				<div class="confirm3">
+					<div class="confirm3-1">
+						<h3>3&nbsp;商品清单</h3><br />
+						<p>
+							<a href="javascript:void(0)">商品</a>
+							<a href="javascript:void(0)">数量</a>
+							<a href="javascript:void(0)">单价</a>
+							<a href="javascript:void(0)">小计</a>
+						</p>
+						<div class="confirm3-1-1">
+							<p class="confirm3-p1">小城故事</p>
+							<p class="confirm3-p2">
+								<a href="javascript:void(0)">
+									<img src="img/shopCar/list10.jpg"/>
+								</a>
+								<a href="javascript:void(0)">
+									海俪恩太阳镜女 唐嫣同款 2016新款 偏光镜开车镜 椭圆大框N6313 
+								</a>
+								<a href="javascript:void(0)">1</a>
+								<a href="javascript:void(0)">328.00</a>
+								<a href="javascript:void(0)">328.00</a>
+							</p>
+							<p class="confirm3-p3">
+								<span>暂不支持收货地址配送</span>
+								<span>您可以选择离您最近的自提点上门提货：运费5元，满99元免邮</span>
+							</p>
+							<p class="confirm3-p4">
+								<a href="javascript:void(0)">
+									<span></span>
+									<span>使用店铺优惠券</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="confirm3-2">
+						<div class="confirm3-2-bill">
+							<a href="javascript:void(0)">
+									<span></span>
+									<span>开发票</span>
+							</a>
+							<p><input type="checkbox" />开发票：<select><option>请选择发票类型</option></select>
+								<select><option>请选择发票内容</option></select>
+							</p>
+						</div>
+						<div class="confirm3-2-bill">
+							<a href="javascript:void(0)">
+									<span></span>
+									<span>缺货处理</span>
+							</a>
+							<p>缺货处理：
+								<input type="radio" />等待所有商品备齐后再发
+								<input type="radio" />取消订单
+								<input type="radio" />与店主协商
+							</p>
+						</div>
+						<div class="confirm3-2-bill">
+							<a href="javascript:void(0)">
+									<span></span>
+									<span>订单附言</span>
+							</a>
+							<p>
+								订单附言：<textarea cols="30" rows="2"></textarea>
+							</p>
+						</div>
+						<div class="confirm3-2-balance">
+							<p><input type="checkbox" /> 使用账户余额支付</p>
+						</div>
+						<div class="confirm3-2-good">
+							<p>该订单完成后，您将获得 <span>0.00</span>的红包。</p>
+							<p>商品总价: <span>168.00</span></p>
+							<p>应付款金额： <span>168.00</span>
+</p>
+						</div>
+					</div>
+					<div class="confirm3-2-way">
+						<h3>4&nbsp;支付方式</h3>
+						<div class="confirm3-2-way-btm">
+							<p>
+								<input type="checkbox" />支付宝网银直连
+							</p>
+							<p>
+								<input type="checkbox" />货到付款
+							</p>
+							<p>
+								<input type="checkbox" />支付宝/快钱/财付通/其他支付
+							</p>
+							<p><a href="javascript:void(0)">返回修改购物车</a>
+							<a href="pay.html"">确认订单</a></p>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div id="shopFooter">
+				
+			</div>
+			<div id="shopBar">
+				<ul class="index-bar">
+					<li>
+						<a href="login.html"></a>
+					</li>
+					<li><a href="javascript:void(0)">在线销售</a></li>
+					<li>
+						<a href="javascript:void(0)">调查</a><a href="javascript:void(0)">在线调查</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">购物车<span id="indexBarNum">0</span></a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">关注</a><a href="javascript:void(0)">关注店铺</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">收藏</a><a href="javascript:void(0)">收藏商品</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)"></a><a href="javascript:void(0)">官方微信</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)"></a><a href="javascript:void(0)">回到顶部</a>
+					</li>
+					<li><img src="img/index/akd_weixin.png"/></li>
+					<li class="nthchild9">
+						您的购物车什么都没有哦，再去看看吧
+					</li>
+					<li class="nthchild10">
+						在线调查问卷
+					</li>
+					<li class="nthchild11">
+						<ul>
+							<li>在线销售顾问</li>
+							<li><a href="javascript:void(0)">在线客服</a></li>
+							<li><a href="javascript:void(0)">客服主管</a></li>
+						</ul>
+					</li>
+					<li class="nthchild12">
+						<div>
+							<a href="javascript:void(0)">请登录</a>
+							<a href="javascript:void(0)">还没有账号？</a>
+							<a href="register.html">立即注册</a></div>
+						<div>
+							<form class="indexForm" action="" method="post">
+								账号<input class="indexFormUser" type="text" name="userName" value="" /><br />
+								密码<input class="indexFormPwd" type="password" name="pwd" placeholder="" /><br />
+								<div>
+									<input class="indexFormMind" type="checkbox" name="ckb" value="记住密码" /><span>记住密码</span>
+								<a href="javascript:void(0)">忘记密码？</a>
+								</div>
+								
+								<input class="indexFormLogin" type="button" name="btn" value="立即登录" />
+							</form>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.plug.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shopCar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/confirmOrder.js" type="text/javascript" charset="utf-8"></script>
+</html>
+

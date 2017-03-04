@@ -1,0 +1,442 @@
+<div class="register">
+	<div class="register-top">
+		<ul class="register-ul-1">
+			<li>手机注册</li>
+			<li>邮箱注册</li>
+		</ul>
+		<a href="javascript:void(0)">已有账号！</a>
+		<a href="login.html">登陆</a>
+	</div>
+	<div class="register-btm">
+		<form class="registerForm1" action="" method="post">
+			<input type="tel" autocomplete="off" name="phone" id="phone" placeholder="13243189098" />
+			<br />
+			<p class="registerP1">-&nbsp;手机号码不是一个有效号码</p>
+			<br />
+			<input type="password" name="registerPwd" id="registerPwd" placeholder="12345678" autocomplete="off" />
+			<br />
+			<p class="registerP2">
+				<a href="javascript:void(0)">弱</a>
+				<a href="javascript:void(0)">中</a>
+				<a href="javascript:void(0)">强</a>
+			</p>
+				<p class="registerP2-1">-&nbsp登陆密码不能少于8个字符</p>
+			<input type="password" name="confirmPwd" id="confirmPwd" placeholder="12345678" autocomplete="off" />
+			<br />
+			<p class="registerP3">-&nbsp;两次密码不一致</p>
+			<br />
+			<p class="registerP4">
+				<input type="text" placeholder="手机验证码" />
+				<input type="button" class="registerBtn1" value="获取手机验证码" />
+				<br />
+			</p>
+			<br />
+
+			<p class="registerP5">
+				<input class="deal1"  type="checkbox" checked="checked" />我已查看并接受《<a href="javascript:void(0)">用户协议</a>》
+			</p>
+			<input type="button" class="registerBtn2" value="立即注册" />
+		</form>
+		<!--email邮箱注册------------------------------------>
+		<form class="registerForm2" action="" method="post">
+			<input type="email" name="email" id="email" placeholder="1468419881@qq.com"
+				autocomplete="off" />
+			<br />
+			<p class="registerP6">-&nbsp;邮件地址不合法</p>
+			<br />
+			<input type="password" name="emailPwd" id="emailPwd" placeholder="12345678" autocomplete="off" />
+			<br />
+			<p class="registerP7">
+				<a href="javascript:void(0)">弱</a>
+				<a href="javascript:void(0)">中</a>
+				<a href="javascript:void(0)">强</a>
+			</p>
+			<p class="registerP7-1">-&nbsp登陆密码不能少于8个字符</p>
+			<input type="password" name="confirmEmailPwd" id="confirmEmailPwd" placeholder="确认密码" />
+			<br />
+			<p class="registerP8">-&nbsp;两次密码不一致</p>
+			<br />
+			<p class="registerP9">
+				<input type="text" placeholder="邮箱验证码" />
+				<input type="button" class="registerBtn3" value="获取邮箱验证码" />
+				<br />
+			</p>
+			<br />
+
+			<p class="registerP10">
+				<input class="deal2" type="checkbox" checked="checked" />我已查看并接受《<a href="javascript:void(0)">用户协议</a>》
+			</p>
+			<input type="button" class="registerBtn4" value="立即注册" />
+		</form>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+			$('.register-ul-1>li').click(function(){
+				var _index=$(this).index();
+				$('.register-ul-1>li').eq(_index).css({
+					border: '1px solid #dddddd',
+					'border-bottom': 'none',
+					'color':'#E4393C'
+				}).siblings().css({
+					border:'none',
+					'color':'#666666',
+					'border-bottom': '1px solid #dddddd'
+				});
+				$('.register-btm>form').eq(_index).css({
+					opacity:1,
+					'z-index':999
+				}).siblings().css({
+					opacity:0,
+					'z-index':0
+				});
+			});
+			//手机号验证
+			$('#phone').blur(function(){
+				var reg=/^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\d{8}$/g;
+				var _phone=$('#phone').val();
+				if(reg.test(_phone)){
+					$('.registerP1').css({
+						opacity:1,
+						color:'#009933'
+					}).html('*&nbsp;可以注册');
+				}else{
+					$('.registerP1').css({
+						opacity:1
+					});
+				};
+			});
+			//email邮箱验证
+			$('#email').blur(function(){
+				var reg=/^[a-zA-Z0-9._%+-]+@(?!.*\.\..*)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/g; 
+				var _email=$('#email').val();
+				if(_email.length==0){
+					$('.registerP6').css({
+						opacity:1,
+						color:'#990000'
+					}).html('-&nbsp;邮件地址不能为空');
+				}else if(reg.test(_email)){
+					$('.registerP6').css({
+						opacity:1,
+						color:'#009933'
+					}).html('*&nbsp;可以注册');
+				}else{
+					$('.registerP6').css({
+						opacity:1,
+						color:'#990000'
+					}).html('-&nbsp;邮件地址不合法');
+				}
+			});
+			//密码验证
+			$('#registerPwd').keyup(function(){
+				$('.registerP2').css({
+					opacity:1
+					});
+				$('.registerP2-1').css({
+					opacity:0
+				});
+				var reg1=/[0-9]/;
+				var reg2=/[a-zA-Z]/;
+				var reg3=/[!@#$%&]/;
+				var _pwd=$('#registerPwd').val();
+				var r1=reg1.test(_pwd);
+				var r2=reg2.test(_pwd);
+				var r3=reg3.test(_pwd);
+				if(r3){
+					console.log('强');
+					$('.registerP2>a').css({
+						'color':'#ff0000'
+					});
+				}else if(r2&&!r3){
+					console.log('zhong')
+					$('.registerP2>a').eq(2).css({
+						'color':'#dadada'
+					}).siblings().css({
+						'color':'#ff0000'
+					});
+				}else if(!r2&&!r3){
+					console.log('ruo')
+					$('.registerP2>a').eq(0).css({
+						'color':'#ff0000'
+					}).siblings().css({
+						'color':'#dadada'
+					});
+				}
+			});
+			$('#registerPwd').blur(function(){
+				var _pwd1=$('#registerPwd').val();
+				var _pwd2=$('#confirmPwd').val();
+				if(_pwd1!=_pwd2){
+					$('.registerP3').css({
+						opacity:1,
+						color:'#990000'
+					}).html('-&nbsp;两次密码不一致');
+				}
+				var _txt=$('#registerPwd').val();
+				if(_txt.length==0){
+					$('.registerP2>a').css({
+						'color':'#dadada'
+					});
+				}else if(_txt.length<8){
+					$('.registerP2').css({
+						opacity:0
+					});
+					$('.registerP2-1').css({
+						opacity:1
+					});
+				}else if(_txt.length>=8){
+					$('.registerP2').css({
+						opacity:1
+					});
+					$('.registerP2-1').css({
+						opacity:0
+					});
+				}
+			});
+			//email邮箱密码验证
+			$('#emailPwd').keyup(function(){
+				$('.registerP7').css({
+					opacity:1
+					});
+				$('.registerP7-1').css({
+					opacity:0
+				});
+				var reg1=/[0-9]/;
+				var reg2=/[a-zA-Z]/;
+				var reg3=/[!@#$%&]/;
+				var _pwd=$('#emailPwd').val();
+				var r1=reg1.test(_pwd);
+				var r2=reg2.test(_pwd);
+				var r3=reg3.test(_pwd);
+				if(r3){
+					console.log('强');
+					$('.registerP7>a').css({
+						'color':'#ff0000'
+					});
+				}else if(r2&&!r3){
+					console.log('zhong')
+					$('.registerP7>a').eq(2).css({
+						'color':'#dadada'
+					}).siblings().css({
+						'color':'#ff0000'
+					});
+				}else if(!r2&&!r3){
+					console.log('ruo')
+					$('.registerP7>a').eq(0).css({
+						'color':'#ff0000'
+					}).siblings().css({
+						'color':'#dadada'
+					});
+				}
+			});
+			$('#emailPwd').blur(function(){
+				var _pwd1=$('#emailPwd').val();
+				var _pwd2=$('#confirmEmailPwd').val();
+				if(_pwd1!=_pwd2){
+					$('.registerP8').css({
+						opacity:1,
+						color:'#990000'
+					}).html('-&nbsp;两次密码不一致');
+				}
+				var _txt=$('#emailPwd').val();
+				if(_txt.length==0){
+					$('.registerP2>a').css({
+						'color':'#dadada'
+					});
+				}else if(_txt.length<8){
+					$('.registerP7').css({
+						opacity:0
+					});
+					$('.registerP7-1').css({
+						opacity:1
+					});
+				}else if(_txt.length>=8){
+					$('.registerP7').css({
+						opacity:1
+					});
+					$('.registerP7-1').css({
+						opacity:0
+					});
+				}
+			});
+			//密码二次验证
+			$('#confirmPwd').blur(function(){
+				var _pwd1=$('#registerPwd').val();
+				var _pwd2=$('#confirmPwd').val();
+				if(_pwd2.length==0){
+					$('.registerP3').css({
+						opacity:0
+					})
+				}else if(_pwd2.length<8){
+					$('.registerP3').css({
+						opacity:1,
+						color:'#990000'
+					}).html('-&nbsp登陆密码不能少于8个字符');
+				}else if(_pwd1===_pwd2){
+					$('.registerP3').css({
+						opacity:1,
+						color:'#009933'
+					}).html('*&nbsp;可以注册');
+				}else{
+					$('.registerP3').css({
+						opacity:1,
+						color:'#990000'
+					}).html('-&nbsp;两次密码不一致');
+				}
+			});
+			//邮箱密码二次验证
+			$('#confirmEmailPwd').blur(function(){
+				var _pwd1=$('#emailPwd').val();
+				var _pwd2=$('#confirmEmailPwd').val();
+				if(_pwd2.length==0){
+					$('.registerP8').css({
+						opacity:0
+					})
+				}else if(_pwd2.length<8){
+					$('.registerP8').css({
+						opacity:1,
+						color:'#990000'
+					}).html('-&nbsp登陆密码不能少于8个字符');
+				}else if(_pwd1===_pwd2){
+					$('.registerP8').css({
+						opacity:1,
+						color:'#009933'
+					}).html('*&nbsp;可以注册');
+				}else{
+					$('.registerP8').css({
+						opacity:1,
+						color:'#990000'
+					}).html('-&nbsp;两次密码不一致');
+				}
+			});
+			//获取验证码
+				var Arr=[0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','G','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'];
+			var checkCode;
+			$('.registerBtn1').click(function(){
+				var _num1=Math.floor(Math.random()*52);
+				var _num2=Math.floor(Math.random()*52);
+				var _num3=Math.floor(Math.random()*52);
+				var _num4=Math.floor(Math.random()*52);
+				var _code1=Arr[_num1].toString();
+				var _code2=Arr[_num2].toString();
+				var _code3=Arr[_num3].toString();
+				var _code4=Arr[_num4].toString();
+				checkCode=_code1+_code2+_code3+_code4;
+				alert(checkCode);
+			});
+			$('.registerP4>input:nth-child(1)').blur(function(){
+				var _registerP4Input=$('.registerP4>input:nth-child(1)').val();
+				if(_registerP4Input!=checkCode){
+					alert('验证码不一致')
+				}
+			});
+			//获取邮箱验证码
+			$('.registerBtn3').click(function(){
+				var _num1=Math.floor(Math.random()*52);
+				var _num2=Math.floor(Math.random()*52);
+				var _num3=Math.floor(Math.random()*52);
+				var _num4=Math.floor(Math.random()*52);
+				var _code1=Arr[_num1].toString();
+				var _code2=Arr[_num2].toString();
+				var _code3=Arr[_num3].toString();
+				var _code4=Arr[_num4].toString();
+				checkCode=_code1+_code2+_code3+_code4;
+				alert(checkCode);
+			});
+			$('.registerP9>input:nth-child(1)').blur(function(){
+				var _registerP4Input=$('.registerP9>input:nth-child(1)').val();
+				if(_registerP4Input!=checkCode){
+					alert('验证码不一致')
+				}
+			});
+			//手机注册
+			var phoneObj;
+			$('.registerBtn2').click(function(){
+				var _l5=$('.deal1');
+				if(!_l5.get(0).checked){
+					alert('你没有接受协议')
+				}else{
+					var _l1=$('#phone').val().length;
+					var _l2=$('#registerPwd').val().length;
+					var _l3=$('#confirmPwd').val().length;
+					var _l4=$('.registerP4>input:nth-child(1)').val().length;
+					if(_l1==0&&_l2==0&&_l3==0&&_l4==0){
+						alert('\n -手机号不能为空\n -密码不能为空\n -手机验证码不能为空');
+					}else if(_l1==0&&_l2==0&&_l3==0&&!_l4==0){
+						alert('\n -手机号不能为空\n -密码不能为空');
+					}else if(_l1==0&&_l2==0&&!_l3==0&&_l4==0){
+						alert('\n -手机号不能为空\n -密码不能为空\n -手机验证码不能为空');
+					}else if(_l1==0&&!_l2==0&&_l3==0&&_l4==0){
+						alert('\n -手机号不能为空\n -密码不能为空\n -手机验证码不能为空');
+					}else if(!_l1==0&&_l2==0&&_l3==0&&_l4==0){
+						alert('\n -密码不能为空\n -手机验证码不能为空');
+					}else if(_l1==0&&!_l2==0&&!_l3==0&&_l4==0){
+						alert('\n -手机号不能为空\n -手机验证码不能为空');
+					}else if(_l1==0&&!_l2==0&&!_l3==0&&!_l4==0){
+						alert('\n -手机号不能为空');
+					}else if(!_l1==0&&!_l2==0&&!_l3==0&&_l4==0){
+						alert('\n --手机验证码不能为空');
+					}else{
+						window.location='html/loginSkip.html';
+					}
+					//存储
+					var _tel=$('#phone').val();
+					var _userPwd=$('#registerPwd').val();
+					phoneObj={
+						username:_tel,
+						userpwd:_userPwd
+					};
+					var strPhoneObj=JSON.stringify(phoneObj);
+					if(window.localStorage){
+						localStorage.phone=strPhoneObj;
+					}else{
+						alert('你的浏览器不支持localstorage!')
+					}
+				}
+			});
+			//email注册
+			$('.registerBtn4').click(function(){
+				var _l5=$('.deal2');
+				if(!_l5.get(0).checked){
+					alert('你没有接受协议')
+				}else{
+					var _l1=$('#email').val().length;
+					var _l2=$('#emailPwd').val().length;
+					var _l3=$('#confirmEmailPwd').val().length;
+					var _l4=$('.registerP9>input:nth-child(1)').val().length;
+					if(_l1==0&&_l2==0&&_l3==0&&_l4==0){
+						alert('\n -邮箱不能为空\n -密码不能为空\n -邮箱验证码不能为空');
+					}else if(_l1==0&&_l2==0&&_l3==0&&!_l4==0){
+						alert('\n -邮箱不能为空\n -密码不能为空');
+					}else if(_l1==0&&_l2==0&&!_l3==0&&_l4==0){
+						alert('\n -邮箱不能为空\n -密码不能为空\n -邮箱验证码不能为空');
+					}else if(_l1==0&&!_l2==0&&_l3==0&&_l4==0){
+						alert('\n -邮箱不能为空\n -密码不能为空\n -邮箱验证码不能为空');
+					}else if(!_l1==0&&_l2==0&&_l3==0&&_l4==0){
+						alert('\n -密码不能为空\n -邮箱验证码不能为空');
+					}else if(_l1==0&&!_l2==0&&!_l3==0&&_l4==0){
+						alert('\n -邮箱不能为空\n -邮箱验证码不能为空');
+					}else if(_l1==0&&!_l2==0&&!_l3==0&&!_l4==0){
+						alert('\n -邮箱不能为空');
+					}else if(!_l1==0&&!_l2==0&&!_l3==0&&_l4==0){
+						alert('\n --邮箱验证码不能为空');
+					}else{
+						window.location='html/loginSkip.html';
+					}
+					//存储
+					var _tel=$('#email').val();
+					var _userPwd=$('#emailPwd').val();
+					phoneObj={
+						username:_tel,
+						userpwd:_userPwd
+					};
+					var strPhoneObj=JSON.stringify(phoneObj);
+					if(window.localStorage){
+						localStorage.phone=strPhoneObj;
+					}else{
+						alert('你的浏览器不支持localstorage!')
+					}
+				}
+			});
+		});
+</script>

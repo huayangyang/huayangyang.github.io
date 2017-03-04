@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*商超样式*/
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: ;
+}
+li{
+	list-style: none;
+}
+.supper{
+	width: 1210px;
+	height: 499px;
+	margin: 0 auto;
+}
+.supper-top{
+	width: 1210px;
+	height: 40px;
+	margin-top: 5px;
+}
+.supper-top-left,.supper-top-right{
+	float: left;
+}
+.supper-top-left{
+	width: 240px;
+	height: 39px;
+	float: left;
+	border-bottom:1px solid rgb(0,0,0);
+}
+.supper-top-left>h3{
+	width: 240px;
+	height: 39px;
+	line-height: 39px;
+	font-size: 20px;
+	color: #000000;
+	text-indent: 72px;
+	background: url(../img/supper/supperlogo.jpg) no-repeat 2px 4px;
+}
+.supper-top-right{
+	width: 970px;
+	height: 39px;
+	float: left;
+	border-bottom: 1px solid #E31939;
+}
+.supper-btm{
+	width: 1210px;
+	height: 444px;
+	margin-top: 10px;
+}
+.supper-btm>dl{
+	width: 228px;
+	height: 202px;
+	float: left;
+	margin-right: 17px;
+	
+	margin-bottom: 20px;
+}
+.supper-btm>dl:nth-child(5),.supper-btm>dl:nth-child(10){
+	margin-right: 0;
+}
+.supper-btm>dl>dt{
+	display: block;
+	position: relative;
+	width: 222px;
+	height: 156px;
+	float: left;
+	border: 3px solid #ECECEC;
+}
+.supper-btm>dl>dt>span{
+	width: 62px;
+	height: 52px;
+	display: block;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../img/supper/supper1.png) no-repeat left top;
+}
+.supper-btm>dl>dt>img{
+	width: 222px;
+	height: 156px;
+	float: left;
+	display: block;
+}
+.supper-btm>dl>dd{
+	width: 228px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-size: 16px;
+	color: white;
+	background: #D6595E;
+	text-align: center;
+}

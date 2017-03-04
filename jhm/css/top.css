@@ -1,0 +1,346 @@
+@charset "utf-8";
+/*设置字体编码为utf-8格式*/
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #666666;
+}
+/*清除默认样式*/
+.top{
+	width: 1233px;
+	height: 32px;
+	background: #F2F2F2;
+	font-size: 11px;
+	color: #999999;
+	margin: 0 auto;
+	padding-left: 30px;
+	position: relative;
+}
+.top>li{
+	display: block;
+	float: left;
+}
+/*无畏先锋*/
+.top>li:first-child{
+	width: 145px;
+	height: 27px;
+	padding-top: 5px;
+}
+.top>li:first-child >a{
+	display: block;
+	float: left;
+}
+.top>li:first-child > a:first-child{
+	width: 18px;
+	height: 21px;
+	background: url(../img/curcity.png) no-repeat left top;
+	margin-right: 4px;
+}
+.top>li:first-child >a:nth-child(2){
+	width: 50px;
+	height: 22px;
+	text-align: center;
+	background: #FF3300;
+	color: white;
+	margin-right: 12px;
+	line-height: 22px;
+	position: relative;
+}
+/*城市菜单*/
+.citys{
+	position: absolute;
+	z-index: 101;
+	width: 225px;
+	top: 28px;
+	left: 60px;
+	background: white;
+	padding: 10px;
+	border: 1px solid silver;
+	display:none;
+}
+.citys >li{
+	width: 225px;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+}
+.citys >li>b{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: url(../img/change_city3.gif) no-repeat left top;
+}
+.citys>li:nth-child(2){
+	display: block;
+	border-top: 1px solid grey;
+	padding-top: 5px;
+}
+.citys>li:nth-child(2) b{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: url(../img/change_city3.gif) no-repeat left top;
+}
+.citys .a-citys{
+	
+	padding: 10px;
+	position: relative;
+	top: -5px;
+}
+.citys .a-citys:hover{
+	background: #FF3300;
+}
+.top>li:first-child > a:last-child{
+	width: 60px;
+	height: 22px;
+	text-align: center;
+	color: #999999;
+	line-height: 22px;
+	float: right;
+}
+.top>li:first-child >a:last-child:hover{
+	text-decoration: underline;
+	color: firebrick;
+}
+/*扭曲丛林*/
+.top>li:nth-child(2){
+	width: 184px;
+	height: 32px;
+	margin-left: 44px;
+	margin-right: 251px;
+	line-height: 32px;
+}
+.top>li:nth-child(2)> a{
+	color: #999999;
+}
+.top>li:nth-child(2) a:hover{
+	color: firebrick;
+	text-decoration: underline;
+}
+/*艾欧尼亚-----------------------------------------------------------------*/
+.top>li:last-child{
+	width: 585px;
+	height: 32px;
+}
+.top>li:last-child >a{
+	display: block;
+	float: left;
+	line-height: 32px;
+	color: #999999;
+	position: relative;
+}
+.top>li:last-child >a:hover{
+	text-decoration: underline;
+}
+.a-4-right{
+	width: 2px;
+	height: 32px;
+	float: left;
+	line-height: 32px;
+	text-align: center;
+}
+.a-1{
+	width: 67px;
+	height: 32px;
+	text-align: left;
+	text-indent: 3px;
+}
+.a-1>span{
+	display: block;
+	position: absolute;
+	top: -1px;
+	right:2px;
+	transform: rotate(90deg);
+	transition: 100ms transform;
+}
+.top>li:last-child>.a-1:hover{
+	background: white;
+}
+.a-1:hover>span{
+	transform: rotate(-90deg);
+	transition: 100ms transform;
+}
+.top>li:last-child>.a-2{
+	width: 90px;
+	height: 32px;
+	color: #E31939;
+	text-indent: 16px;
+	margin-left: 16px;
+	background: url(../img/top/atention.png) no-repeat left center;
+}
+.top>li:last-child>.a-3{
+	width: 55px;
+	height: 32px;
+	color: #E31939;
+	text-indent: 19px;
+	background: url(../img/top/shop.png) no-repeat left center;
+	margin-left: 17px;
+}
+.a-4{
+	width: 57px;
+	height: 32px;
+	line-height: 32px;
+	margin-left: 12px;
+	text-indent: 3px;
+}
+.a-4>span{
+	display: block;
+	position: absolute;
+	top: -1px;
+	right:2px;
+	transform: rotate(90deg);
+	transition: 100ms transform;
+}
+.top>li:last-child>.a-4:hover{
+	background: white;
+}
+.a-4:hover>span{
+	transform: rotate(-90deg);
+	transition: 100ms transform;
+}
+.a-5{
+	width: 75px;
+	height: 32px;
+	margin-left: 11px;
+	text-indent: 19px;
+	background: url(../img/top/phone.png) no-repeat 2px center;
+}
+.a-5>span{
+	display: block;
+	position: absolute;
+	width: 5;
+	height: 5;
+	top: -10px;
+	right:2px;
+	transform: rotate(90deg);
+	transition: 100ms transform;
+}
+.top>li:last-child>.a-5:hover{
+	background: white url(../img/top/phone.png) no-repeat 2px center;
+}
+.a-5:hover>span{
+	top: 7px;
+	transform: rotate(-90deg);
+	transition: 100ms transform;
+}
+.a-6{
+	width: 65px;
+	height: 32px;
+	margin-left: 15px;
+	text-indent: 3px;
+}
+.a-6:hover >span{
+	transform: rotate(90deg);
+}
+.a-6>span{
+	display: block;
+	position: absolute;
+	top: -1px;
+	right:2px;
+	transform: rotate(90deg);
+	transition: 100ms transform;
+}
+.top>li:last-child>.a-6:hover{
+	background: white;
+}
+.a-6:hover>span{
+	transform: rotate(-90deg);
+	transition: 100ms transform;
+}
+.a-7{
+	width: 80px;
+	height: 32px;
+	margin-left: 14px;
+	text-indent: 17px;
+	background:url(../img/top/site.png) no-repeat -2px 6px;
+}
+.a-7>span{
+	display: block;
+	position: absolute;
+	top: -10px;
+	right:0px;
+	transform: rotate(90deg);
+	transition: 100ms transform;
+}
+.top>li:last-child>.a-7:hover{
+	background:#FFFFFF url(../img/top/site.png) no-repeat -2px 6px;
+}
+.a-7:hover>span{
+	transform: rotate(-90deg);
+	transition: 100ms transform;
+	top: 8px;
+	right: -2px;
+}
+#message{
+	width: 94px;
+	height: 56px;
+	position: absolute;
+	display: none;
+	background: white;
+	border: 1px solid #eeeeee;
+	border-top: none;
+	z-index: 999;
+}
+#message>a{
+	display: block;
+	width: 94px;
+	height: 28px;
+	font-size: 11px;
+	color: #666666;
+	text-align: center;
+}
+#message>a:hover{
+	text-decoration: underline;
+}
+#message>a:first-child{
+	padding-top: 10px;
+	height: 18px;
+}
+#favorite{
+	width: 80px;
+	height: 55px;
+	padding-top: 5px;
+	position: absolute;
+	display: none;
+	background: white;
+	border: 1px solid #eeeeee;
+	border-top: none;
+	z-index: 999;
+}
+#favorite>a{
+	display: block;
+	width:80px;
+	height: 30px;
+	font-size: 11px;
+	color: #666666;
+	line-height: 30px;
+	text-align: center;
+}
+#favorite>a:hover{
+	text-decoration: underline;
+}
+#favorite>a:first-child{
+	height: 20px;
+}
+#weixin{
+	width: 170px;
+	height: 165px;
+	background:white url(../img/top/weixin.png) no-repeat center;
+	position: absolute;
+	display: none;
+	border: 1px solid #eeeeee;
+	border-top: none;
+	z-index: 999;
+}

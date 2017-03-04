@@ -1,0 +1,407 @@
+@charset "utf-8";
+/**
+ * 登录页样式
+ */
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input{
+	text-indent: 3px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+#wrap{
+	width: 100%;
+	height: 722px;
+}
+#header,#containter{
+	width: 1210px;
+	margin: 0 auto;
+}
+#header{
+	height: 100px;
+	background: url(../img/login/logo.jpg) no-repeat 147px center;
+}
+#header>div{
+	width: 605px;
+	height: 100px;
+	float: left;
+	line-height: 100px;
+}
+#header>div:last-child{
+	width: 475px;
+	height: 100px;
+	line-height: 100px;
+}
+#header>div:last-child{
+	padding-left: 130px;
+}
+#header>div:last-child>a{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+	background: white;
+	margin-top: 30px;
+}
+#header>div:last-child>a:first-child{
+	background: url(../img/login/login.png) no-repeat -7px top;
+}
+#header>div:last-child>a:nth-child(2){
+	background: url(../img/login/login.png) no-repeat -60px top;
+}
+#header>div:last-child>a:last-child{
+	background: url(../img/login/login.png) no-repeat -120px top;
+}
+#header>div:first-child>h3{
+	float: right;
+	display: block;
+	width: 147px;
+	height: 40px;
+	font-size: 25px;
+	color: #666666;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 30px;
+	border-left: 1px solid #E5E5E5;
+	
+}
+#containter{
+	height: 507px;
+	background: url(../img/login/loginPic.jpg) no-repeat 120px 100px;
+	animation:300ms bgtog;
+	transition: 2s animation linear;
+	position: relative;
+}
+@keyframes bgtog{
+	0%{background: url(../img/login/loginPic.jpg) no-repeat -120px 100px;}
+	10%{background: url(../img/login/loginPic.jpg) no-repeat -100px 100px;}
+	20%{background: url(../img/login/loginPic.jpg) no-repeat -70px 100px;}
+	30%{background: url(../img/login/loginPic.jpg) no-repeat -40px 100px;}
+	40%{background: url(../img/login/loginPic.jpg) no-repeat -20px 100px;}
+	50%{background: url(../img/login/loginPic.jpg) no-repeat 0px 100px;}
+	60%{background: url(../img/login/loginPic.jpg) no-repeat 20px 100px;}
+	70%{background: url(../img/login/loginPic.jpg) no-repeat 40px 100px;}
+	80%{background: url(../img/login/loginPic.jpg) no-repeat 60px 100px;}
+	90%{background: url(../img/login/loginPic.jpg) no-repeat 80px 100px;}
+	93%{background: url(../img/login/loginPic.jpg) no-repeat 90px 100px;}
+	95%{background: url(../img/login/loginPic.jpg) no-repeat 100px 100px;}
+	97%{background: url(../img/login/loginPic.jpg) no-repeat 110px 100px;}
+	100%{background: url(../img/login/loginPic.jpg) no-repeat 120px 100px;}
+}
+#content-right{
+	width: 388px;
+	height: 454px;
+	position: absolute;
+	left: 720px;
+	animation: 300ms contright;
+	transition: 2s animation linear;
+	top: 30px;
+}
+@keyframes contright{
+	0%{left:900px}
+	10%{left:880px}
+	20%{left:860px}
+	30%{left:840px}
+	40%{left:820px}
+	50%{left:800px}
+	60%{left:780px}
+	70%{left:760px}
+	80%{left:740px}
+	90%{left:730px}
+	100%{left:720px}
+}
+#register-right{
+	width: 382px;
+	height: 454px;
+	position: absolute;
+	left: 720px;
+	top: 30px;
+}
+.register{
+	width: 382px;
+	height: 454px;
+}
+.register-top{
+	width: 97px;
+	height: 32px;
+	line-height: 32px;
+	position: relative;
+	padding-left: 285px;
+}
+.register-top>a{
+	font-size: 11px;
+	color: #666666;
+}
+.register-top>a:last-child{
+	color: #E4393C;
+	letter-spacing: 2px;
+}
+.register-top>a:last-child:hover{
+	text-decoration: underline;
+}
+.register-ul-1{
+	width: 260px;
+	height: 33px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+.register-ul-1>li{
+	position: absolute;
+	font-size: 13px;
+	width: 125px;
+	height: 32px;
+	background: white;
+	float: left;
+	top: 1px;
+	color: #666666;
+	text-align: center;
+	line-height: 32px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.register-ul-1>li:first-child{
+	left: 0;
+	height: 31px;
+	margin-right: 5px;
+	color: #E4393C;
+	border: 1px solid #DDDDDD;
+	border-bottom: 1px solid white;
+}
+.register-ul-1>li:last-child{
+	width: 130px;
+	left: 130px;
+	top: 0;
+}
+.register-btm{
+	width: 380px;
+	height: 420px;
+	border: 1px solid #DDDDDD;
+	position: relative;
+}
+.register-btm>input{
+	color: #808080;
+	text-indent: 3px;
+	
+}
+.register-btm>form{
+	padding-top: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+	position: absolute;
+	width: 300px;
+	height: 390px;
+	text-align: center;
+	left: 0;
+	top: 0;
+}
+.register-btm>form input{
+	border:1px solid #CCCCCC;
+	text-indent: 3px;
+}
+.register-btm>form:last-child{
+	opacity: 0;
+	z-index: -1;
+}
+.register-btm>form>input{
+	width: 295px;
+	height: 38px;
+	float: left;
+}
+.register-btm>form>p{
+	width: 295px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 11px;
+	float: left;
+	text-align: left;
+}
+.registerP2>a,.registerP7>a{
+	float: left;
+	display: block;
+	width: 33%;
+	height: 30px;
+	text-align: center;
+	color: #999999;
+	font-size:11px;
+}
+.register-btm>form >.registerP2-1,.register-btm>form >.registerP7-1{
+	width: 295px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 11px;
+	text-align: left;
+	position: absolute;
+	left:40px;
+	top: 140px;
+	opacity: 0;
+	z-index: 999;
+}
+.registerP1,.registerP3,.registerP6,.registerP8{
+	opacity: 0;
+}
+.registerP4,.registerP9{
+	height: 37px;
+	margin-bottom: 40px;
+}
+.registerP4>input:nth-child(1),.registerP9>input:nth-child(1){
+	width: 127px;
+	height: 35px;
+	font-size: 11px;
+	color: #666666;
+	text-align: center;
+}
+.registerP4>input:nth-child(2),.registerP9>input:nth-child(2){
+	border: none;
+	width: 106px;
+	height: 37px;
+	font-size: 11px;
+	color: white;
+	margin-left: 10px;
+	text-align: center;
+	background: #E4393C;
+}
+.registerP5,.registerP10{
+	width: 295px;
+	height: 30px;
+	line-height: 30px;
+}
+.registerP5>input,.registerP10>input{
+	position: relative;
+	margin-right: 5px;
+	top: 2px;
+}
+.registerP5>a:hover,.registerP10>a:hover{
+	text-decoration: underline;
+}
+.registerBtn2,.registerBtn4{
+	border: none;
+	background: #E4393C;
+}
+.registerP1,.registerP2,.registerP2-1,.registerP7-1,.registerP3,.registerP6,.registerP7,.registerP8{
+	color: #990000;
+}
+
+#phone,#registerPwd,#confirmPwd,#email,#emailPwd,#confirmEmailPwd{
+	text-indent: 30px;
+}
+#email,#phone{
+	color: #808080;
+}
+#phone,.registerP4>input:first-child{
+	background: url(../img/login/phone.png) no-repeat 5px center;
+}
+#registerPwd,#confirmPwd,#emailPwd,#confirmEmailPwd{
+	background: url(../img/login/pwd.png) no-repeat 5px center;
+}
+#email,.registerP9>input:first-child{
+	background: url(../img/login/email.png) no-repeat 5px center;
+}
+/*登陆底部----------------------------------------*/
+#footer{
+	width: 100%;
+	height: 110px;
+	padding-top: 5px;
+	background: #FAFAFA;
+}
+#foot{
+	width: 1210px;
+	height: 115px;
+	background: #FAFAFA;
+	margin: 0 auto;
+}
+/*load加载----------------部分*/
+.login{
+	width: 388px;
+	height: 446px;
+}
+.login-top{
+	width: 130px;
+	height: 29px;
+	line-height: 29px;
+	padding-left: 258px;
+}
+.login-top>a{
+	font-size: 11px;
+}
+.login-top>a:first-child{
+	color: #666666;
+}
+.login-top>a:last-child{
+	color: #E4393C;
+}
+.login-btm{
+	margin-left: 6px;
+	margin-top: 5px;
+	width: 380px;
+	height: 410px;
+	border: 1px solid #DDDDDD;
+	box-shadow: -3px -3px 4px #DDDDDD;
+}
+.login-btm>form{
+	width: 304px;
+	height: 370px;
+	padding: 26px 38px 14px 38px;
+	font-size: 11px;
+	color: #666666;
+}
+.login-btm>form>p,.login-btm>form>input{
+	width: 304px;
+	height: 38px;
+	line-height: 38px;
+}
+.login-p1,.login-p2{
+	font-size: 14px;
+}
+.login-p3>a:last-child{
+	float: right;
+	color: #E4393C;
+}
+.login-p3>input{
+	margin-right: 5px;
+	position: relative;
+	top: 2px;
+}
+.login-p4{
+	margin-top: 5px;
+}
+.login-p4>a{
+	display: block;
+	float: left;
+	width: 25%;
+	height: 38px;
+	line-height: 38px;
+	text-indent: 33px;
+	overflow: hidden;
+	font-size: 11px;
+	color: #666666;
+}
+.login-p4>a:hover{
+	color: #E4393C;
+}
+.login-p4>a:first-child{
+	background: url(../img/login/weixin.png) no-repeat 4px 6px;
+}
+.login-p4>a:nth-child(2){
+	background: url(../img/login/qq.png) no-repeat 4px 6px;
+}
+.login-p4>a:nth-child(3){
+	background: url(../img/login/sina.png) no-repeat 4px 6px;
+}
+.login-p4>a:last-child{
+	background: url(../img/login/pay.png) no-repeat 4px 6px;
+}
+#loginBtn{
+	border: none;background: #E4393C;
+}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+	float: left;
+}
+a{
+	text-decoration: none;
+}
+.nav-list{
+	width: 1002px;
+	padding-left: 261px;
+	height: 42px;
+	margin: 0 auto;
+	background: white;
+}
+.nav-list>li>a{
+	font-size: 14px;
+	color: #3C3C3C;
+	display: block;
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.nav-list>li>a:hover{
+	color: rgb(227, 25, 57);
+}

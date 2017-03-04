@@ -1,0 +1,69 @@
+<div class="header">
+	<a class="nav-left-top" href="javascript:void(0)">全部商品分类<span>&gt;</span></a>
+	<div class="logo">
+
+	</div>
+	<div class="search">
+		<ul class="ul-search">
+			<li><a href="javascript:void(0)">宝贝</a><a href="javascript:void(0)">店铺</a></li>
+		</ul>
+		<form class="form-search">
+			<input list="SearchList" type="text" style="outline: 0;" placeholder="请输入关键词" />
+			<datalist id="SearchList" onlayoutcomplete>
+				<option value="a食品生鲜"></option>
+				<option value="a酒水"></option>
+				<option value="d白酒水"></option>
+				<option value="d啤酒水"></option>
+				<option value="a服装服饰"></option>
+				<option value="a母婴那份"></option>
+				<option value="a"></option>
+				<option value="b家用电器"></option>
+				<option value="b"></option>
+				<option value="b个护化妆"></option>
+				<option value="b女装馆"></option>
+				<option value="b灯饰"></option>
+				<option value="e私房菜"></option>
+				<option value="e丛台酒"></option>
+				<option value="e非凡旅游"></option>
+				<option value="b家居日用"></option>
+				<option value="c家具"></option>
+				<option value="f三星S6"></option>
+				<option value="f苹果"></option>
+				<option value="fb"></option>
+				<option value="g个护化妆"></option>
+				<option value="g女装馆"></option>
+				<option value="b灯饰"></option>
+				<option value="v私房菜"></option>
+				<option value="v丛台酒"></option>
+				<option value="e非凡旅游"></option>
+				<option value="x家居日用"></option>
+				<option value="x家具"></option>
+				<option value="z三星S6"></option>
+				<option value="z苹果"></option>
+			</datalist>
+			<button id="search">搜索</button>
+		</form>
+		<ul class="ul-menu">
+			<li>
+				<a href="cate.html">灯饰</a>
+				<a href="javascript:void(0)">私房菜</a>
+				<a href="javascript:void(0)">丛台酒</a>
+				<a href="javascript:void(0)">非凡旅游</a>
+				<a href="javascript:void(0)">家具</a>
+				<a href="javascript:void(0)">三星S6</a>
+				<a href="javascript:void(0)">苹果</a>
+			</li>
+		</ul>
+	</div>
+	<div class="safe">
+
+	</div>
+</div>
+<script type="text/javascript">
+	$('.ul-search>li>a').eq(0).addClass('a-bg');
+		$('.ul-search>li>a').click(function(){
+			var _index=$(this).index();
+			$('.ul-search>li>a').eq(_index).addClass('a-bg').siblings().removeClass('a-bg');
+		});
+		
+</script>

@@ -1,0 +1,261 @@
+@charset "utf-8";
+/*#floor样式--------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.floor1{
+	width: 1210px;
+	height: 705px;
+	margin: auto;
+	color: #666666;
+	overflow: hidden;
+}
+.floor-wrap{
+	width: 1210px;
+	height: 685px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.floor-left{
+	float: left;
+	width: 240px;
+	height: 600px;
+
+}
+.floor-left-one{
+	width: 232px;
+	height: 41px;
+	color: #666666;
+	font-size: 20px;
+	line-height: 41px;
+	padding-left: 8px;
+}
+.floor-left-one>h3{
+	float: left;
+	margin-right: 13px;
+}
+.floor-left-top{
+	width: 215px;
+	padding-left: 25px;
+	height: 226px;
+	padding-top: 36px;
+	background: #8DD514;
+}
+.floor-left-top>a{
+	display: block;
+	float: left;
+	color: #2f2f2f;
+	text-align: center;
+	line-height: 14px;
+	font-size: 11px;
+	width: 37px;
+	padding-top: 20px;
+	padding-left: 11px;
+	padding-right: 11px;
+	height: 39px;
+	margin-bottom: 10px;
+	border: 1px solid gainsboro;
+	margin-right: 10px;
+	border-radius: 50%;
+	background: white;
+}
+.floor-left-top>a:hover{
+	background: #8DD514;
+}
+.floor-left-bottom{
+	width: 240px;
+	height: 297px;
+}
+.floor-bottom>img{
+	display: block;
+	width: 240px;
+	float: left;
+	height: 297px;
+}
+.floor-center{
+	float: left;
+	width: 820px;
+	height: 559px;
+	position: relative;
+}
+.floor-center-top{
+	width: 820px;
+	height: 41px;
+	position: relative;
+}
+.floor-center-top>ul{
+	float: right;
+	position: absolute;
+	bottom: -1px;
+	right: -150px;
+}
+.floor-center-top>ul>li{
+	display: block;
+	float: left;
+	padding: 11px 25px;
+	margin-left: 8px;
+	position: relative;
+	z-index: 1;
+	border: 1px solid #DDDDDD;
+	border-bottom: 1px solid #61E20E;
+}
+.floor-center-btm{
+	width: 820px;
+	height: 558px;
+	position: absolute;
+	left: 0;
+	top: 41px;
+	border-top: 1px solid #61E20E;
+	z-index: -1;
+	opacity: 0;
+}
+.floor-centercolor{
+	opacity: 1;
+	z-index: 0;
+}
+.floor-center-btm>dl{
+	width: 204px;
+	height: 277px;
+	float: left;
+	border-bottom: 1px solid #E7E7E7;
+	border-right: 1px solid #E7E7E7;
+}
+.floor-center-btm>dl:nth-child(4),.floor-center-btm>dl:nth-child(8){
+	width: 205px;
+	height: 277px;
+	border-right: none;
+}
+.floor-center-btm>dl>dt{
+	width: 161px;
+	height: 115px;
+	float: left;
+	padding: 42px 23px 36px 20px;
+}
+.floor-center-btm>dl>dt>img{
+	width: 161px;
+	height: 115px;
+	display: block; 
+	float: left;
+}
+.floor-center-btm>dl>dd{
+	width: 161px;
+	height: 84px;
+	padding-left: 20px;
+	padding-right: 23px;
+}
+.floor-center-btm>dl>dd>p{
+	width: 161px;
+	height: 44px;
+	float: left;
+}
+.floor-center-btm>dl>dd>p:first-child{
+	color: #777777;
+	font-size: 11px;
+}
+.floor-center-btm>dl>dd>p:last-child>span{
+	width: 38px;
+	height: 17px;
+	float: left;
+	font-size: 7px;
+	color: #999999;
+	text-decoration: line-through;
+}
+.floor-center-btm>dl>dd>p:last-child>span:last-child{
+	clear: left;
+	font-size: 11px;
+	color: #E31939;
+	text-decoration: none;
+}
+.floor-center-btm>dl>dd>p:last-child>a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: right;
+	background: url(../img/floor/index.png) no-repeat left top;
+}
+.floor-right{
+	float: left;
+	width: 150px;
+	height: 559px;
+	padding-top: 41px;
+}
+.floor-right-btm{
+	width: 150px;
+	height: 558px;
+	border-top: 1px solid #61E20E;
+}
+.floor-right-btm>img{
+	display: block;
+	float: left;
+	margin-bottom: 1px;
+	width: 150px;
+	height: 278px;
+}
+.floor-bottom{
+	width: 1210px;
+	height: 66px;
+	float: left;
+	background: #F7F7F7;
+	margin-top: 16px;
+	overflow: hidden;
+	position: relative;
+}
+.floor-bottom>ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.floor-bottom>ul>li{
+	width: 98px;
+	height: 34px;
+	padding: 0 11px;
+	margin-top: 16px;
+	display: block;
+	float: left;
+	border-right: 1px dotted #CCCCCC;
+}
+.floor-bottom>ul>li>a{
+	display: block;
+	float: left;
+	padding: 5px;
+}
+.floor-bottom>ul>li>a>img{
+	display: block;
+	float: left;
+	width: 88px;
+	height: 24px;
+}
+.floor-bottom>span:nth-child(1){
+	display: block;
+	width: 30px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 13px;
+	z-index: 1;
+	background: black url(../img/floor/floor2.png) no-repeat left top;
+}
+.floor-btmopa1{
+	opacity: .1;
+}
+.floor-btmopa2{
+	opacity: 0;
+}
+.floor-bottom>span:nth-child(2){
+	display: block;
+	width: 30px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 13px;
+	z-index: 1;
+	background: black url(../img/floor/floor3.png) no-repeat left top;
+	
+}
