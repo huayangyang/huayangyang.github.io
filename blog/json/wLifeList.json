@@ -1,20 +1,23 @@
-{
-	"0l0":{
+[
+	{
+		"id":"0l0",
 		"imgUrl":"img/tm-img-240x120-1.jpg",
 		"title":"生活",
 		"explain":"生活"
 		
 	},
-	"0l1":{
+	{
+		"id":"0l1",
 		"imgUrl":"img/tm-img-240x120-2.jpg",
 		"title":"生活",
 		"explain":"生活"
 		
 	},
-	"0l2":{
+	{
+		"id":"0l2",
 		"imgUrl":"img/tm-img-240x120-3.jpg",
 		"title":"生活",
 		"explain":"生活"
 		
 	}
-}
+]
