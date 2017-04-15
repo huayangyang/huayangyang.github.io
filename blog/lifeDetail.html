@@ -83,7 +83,14 @@
 
 					<aside class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 tm-aside-r">
 
-						<div class="tm-aside-container">
+						<div class="tm-aside-container" id="lifeDetailList">
+							<!--<div class="tm-content-box tm-margin-t-small">
+								<a href="javascript:void(0)" class="tm-text-link">
+									<h4 class="tm-margin-b-20 tm-thin-font">人生格言</h4></a>
+								<p class="tm-margin-b-30">Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
+							</div>
+							<hr class="tm-margin-t-small">-->
+							
 							<h3 class="tm-gold-text tm-title">
                                 	博文列表
                             </h3>
@@ -103,28 +110,10 @@
 									<!--<li>
 										<a href="#" class="tm-text-link">Suspendisse sed dui nulla</a>
 									</li>-->
-									
+
 								</ul>
 							</nav>
-							<hr class="tm-margin-t-small">
 
-							<div class="tm-content-box tm-margin-t-small">
-								<a href="javascript:void(0)" class="tm-text-link">
-									<h4 class="tm-margin-b-20 tm-thin-font">人生格言</h4></a>
-								<p class="tm-margin-b-30">Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
-							</div>
-							<hr class="tm-margin-t-small">
-							<div class="tm-content-box tm-margin-t-small">
-								<a href="javascript:void(0)" class="tm-text-link">
-									<h4 class="tm-margin-b-20 tm-thin-font">人生格言</h4></a>
-								<p>Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
-							</div>
-							<hr class="tm-margin-t-small">
-							<div class="tm-content-box tm-margin-t-small">
-								<a href="javascript:void(0)" class="tm-text-link">
-									<h4 class="tm-margin-b-20 tm-thin-font">人生格言</h4></a>
-								<p>Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
-							</div>
 						</div>
 
 					</aside>
@@ -223,7 +212,27 @@
 		<!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$.ajax({
+				type: "get",
+				url: "json/wLifeList.json",
+				async: true,
+				dataType: 'json',
+				success: function(data) {
+					console.log(data);
+						for(var i = 0; i < data.length; i++) {
+							$('#lifeDetailList').prepend('<div class="tm-content-box tm-margin-t-small">'+
+														'<a data-id="'+data[i].title+'" href="javascript:void(0)" class="tm-text-link">'+
+															'<h4 class="tm-margin-b-20 tm-thin-font">'+data[i].title+'</h4></a>'+
+														'<p class="tm-margin-b-30">'+data[i].explain+'</p>'+
+													'</div>'+
+													'<hr class="tm-margin-t-small">')
+						}
+						$('#lifeDetailList').prepend('<h3 class="tm-gold-text tm-title">生活列表</h3>')
 
+				}
+			});
+		</script>
 	</body>
 
 </html>
