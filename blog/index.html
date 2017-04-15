@@ -82,19 +82,12 @@
 
 				<div id="life" class="row tm-margin-t-big">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-						<div class="tm-2-col-left">
-
-							<h3 id="userLife" class="tm-gold-text tm-title">Pellentesque fermentum mauris et posuere</h3>
-							<p class="tm-margin-b-30">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
+						<div id="" class="tm-2-col-left">
+							<h3 id="indexTitle" class="tm-gold-text tm-title"></h3>
+							<p id="indexExplain" class="tm-margin-b-30"></p>
 							<img src="img/tm-img-660x330-1.jpg" alt="Image" class="tm-margin-b-40 img-fluid">
-							<p>
-								Donec tempor lobortis tortor, in feugiat massa facilisis sed. Ut dignissim viverra pretium. In eu justo maximus turpis feugiat finibus scelerisque nec eros. Cras nec lectus tempor nibh vestibulum eleifend et ac elit.
-							</p>
-							<p>Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id. Fusce sagittis ultricies felis, non luctus mauris lacinia quis.</p>
-							<p class="m-b-2"> Ut fringilla lacus ac tempor ullamcorper. Mauris iaculis placerat ex et mattis. Mauris id vulputate lectus, id fermentum sapien.
-							</p>
 							<a href="#" class="tm-btn text-uppercase" style="display: none;">详情</a>
-
+							<div id="indexContent"></div>
 						</div>
 					</div>
 
@@ -269,7 +262,7 @@
 																'<img src="'+data[i].imgUrl+'" alt="Image" class="tm-margin-b-20 img-fluid">'+
 																'<h4 class="tm-margin-b-20 tm-gold-text">'+data[i].title+'</h4>'+
 																'<p class="tm-margin-b-20">'+data[i].explain+'</p>'+
-																'<a data-id="'+data[i].id+'" href="#life" class="tm-btn text-uppercase">详情</a>'+
+																'<a data-id="'+data[i].id+'" href="javascript:void(0)" class="tm-btn text-uppercase yLifeId">详情</a>'+
 															'</div>'+
 														'</div>');
 							}
@@ -280,13 +273,51 @@
 																'<img src="'+data[i].imgUrl+'" alt="Image" class="tm-margin-b-20 img-fluid">'+
 																'<h4 class="tm-margin-b-20 tm-gold-text">'+data[i].title+'</h4>'+
 																'<p class="tm-margin-b-20">'+data[i].explain+'</p>'+
-																'<a data-id="'+data[i].id+'" href="#life" class="tm-btn text-uppercase">详情</a>'+
+																'<a data-id="'+data[i].id+'" href="javascript:void(0)" class="tm-btn text-uppercase yLifeId">详情</a>'+
 															'</div>'+
 														'</div>');
 							}	
 						}
 						
 					}
+				});
+				//文章详情
+				$.ajax({
+					type:"get",
+					url:"json/yLife.json",
+					async:true,
+					dataType:'json',
+					success:function(data){
+						console.log(data['1l0']);
+						$('#indexTitle').text(data['1l0'].title);
+						$('#indexExplain').text(data['1l0'].explain);
+						var textArr=data['1l0'].content.split('****');
+						console.log(textArr)
+						for(var i=0;i<textArr.length;i++){
+							$('#indexContent').append('<p>'+textArr[i]+'</p>')
+						}
+					}
+				});
+				//查看详情
+				$(document).on('click','.yLifeId',function(){
+					var id=$(this).data('id');
+					$('#indexContent').empty();
+					$.ajax({
+						type:"get",
+						url:"json/yLife.json",
+						async:true,
+						dataType:'json',
+						success:function(data){
+							$('#indexTitle').text(data[id].title);
+							$('#indexExplain').text(data[id].explain);
+							var textArr=data[id].content.split('****');
+							console.log(textArr)
+							for(var i=0;i<textArr.length;i++){
+								$('#indexContent').append('<p>'+textArr[i]+'</p>')
+							}
+							
+						}
+					});
 				});
 			});
 		</script>
