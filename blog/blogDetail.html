@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>博客</title>
+		<title>博文</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- Bootstrap style -->
 		<link rel="stylesheet" href="css/templatemo-style.css">
@@ -25,7 +25,7 @@
 		<div class="tm-header">
 			<div class="container-fluid">
 				<div class="tm-header-inner">
-					<a href="#" class="navbar-brand tm-site-name">阳小纯</a>
+					<a href="#" class="navbar-brand tm-site-name">博文天下</a>
 
 					<!-- navbar -->
 					<nav class="navbar tm-main-nav">
@@ -42,7 +42,7 @@
 								<li class="nav-item">
 									<a href="about.html" class="nav-link">project</a>
 								</li>
-								<li class="nav-item active">
+								<li class="nav-item">
 									<a href="blog.html" class="nav-link">Blog</a>
 								</li>
 								<li class="nav-item">
@@ -61,7 +61,7 @@
 
 		</div>
 
-		<section id="blog" class="tm-section">
+		<section class="tm-section">
 			<div class="container-fluid">
 				<div class="row">
 
@@ -79,20 +79,6 @@
 
 							<p>Sed vitae luctus libero. Nam sem neque, finibus id sem pharetra, cursus porttitor ligula. Praesent aliquam fermentum dui, vitae venenatis libero vulputate ac. Fusce bibendum scelerisque magna eget iaculis. Phasellus non arcu eu sem convallis semper. Duis vulputate dignissim rhoncus.</p>
 						</div>
-
-						<div class="row tm-margin-t-big" id="yBlogList">
-							<!--<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-
-								<div class="tm-content-box">
-									<img src="img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-30 img-fluid">
-									<h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #1</h4>
-									<p class="tm-margin-b-20">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra</p>
-									<a href="#" class="tm-btn text-uppercase">详情</a>
-								</div>
-
-							</div>-->
-						</div>
-
 					</div>
 
 					<aside class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 tm-aside-r">
@@ -141,19 +127,19 @@
 							<hr class="tm-margin-t-small">
 
 							<div class="tm-content-box tm-margin-t-small">
-								<a href="#" class="tm-text-link">
+								<a href="javascript:void(0)" class="tm-text-link">
 									<h4 class="tm-margin-b-20 tm-thin-font">人生格言</h4></a>
 								<p class="tm-margin-b-30">Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
 							</div>
 							<hr class="tm-margin-t-small">
 							<div class="tm-content-box tm-margin-t-small">
-								<a href="#" class="tm-text-link">
+								<a href="javascript:void(0)" class="tm-text-link">
 									<h4 class="tm-margin-b-20 tm-thin-font">人生格言</h4></a>
 								<p>Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
 							</div>
 							<hr class="tm-margin-t-small">
 							<div class="tm-content-box tm-margin-t-small">
-								<a href="#" class="tm-text-link">
+								<a href="javascript:void(0)" class="tm-text-link">
 									<h4 class="tm-margin-b-20 tm-thin-font">人生格言</h4></a>
 								<p>Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</p>
 							</div>
@@ -255,44 +241,7 @@
 		<!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$(function(){
-				//有详情博文列表
-				$.ajax({
-					type:"get",
-					url:"json/yBlogList.json",
-					async:true,
-					dataType:'json',
-					success:function(data){
-						console.log(data);
-						if(data.length>3){
-							for(var i=0;i<3;i++){
-								$('#yBlogList').append('<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">'+
-															'<div class="tm-content-box">'+
-																'<img src="'+data[i].imgUrl+'" alt="Image" class="tm-margin-b-30 img-fluid">'+
-																'<h4 class="tm-margin-b-20 tm-gold-text">'+data[i].title+'</h4>'+
-																'<p class="tm-margin-b-20">'+data[i].explain+'</p>'+
-																'<a data-id="'+data[i].id+'" href="#blog" class="tm-btn text-uppercase">详情</a>'+
-															'</div>'+
-														'</div>')
-							}
-						}else{
-							for(var i=0;i<data.length;i++){
-								$('#yBlogList').append('<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">'+
-															'<div class="tm-content-box">'+
-																'<img src="'+data[i].imgUrl+'" alt="Image" class="tm-margin-b-30 img-fluid">'+
-																'<h4 class="tm-margin-b-20 tm-gold-text">'+data[i].title+'</h4>'+
-																'<p class="tm-margin-b-20">'+data[i].explain+'</p>'+
-																'<a data-id="'+data[i].id+'" href="#blog" class="tm-btn text-uppercase">详情</a>'+
-															'</div>'+
-														'</div>')
-							}
-						}
-						
-					}
-				});
-			});
-		</script>
+
 	</body>
 
 </html>
