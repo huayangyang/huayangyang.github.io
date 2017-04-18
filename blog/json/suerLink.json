@@ -1,4 +1,8 @@
-[
+[	
+	{
+		"text":"My Github",
+		"url":"https://github.com/huayangyang"
+	},
 	{
 		"text":"Node.js教程",
 		"url":"http://www.runoob.com/nodejs/nodejs-tutorial.html"
